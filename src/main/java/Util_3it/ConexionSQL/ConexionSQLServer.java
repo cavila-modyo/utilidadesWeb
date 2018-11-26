@@ -21,6 +21,10 @@ public class ConexionSQLServer {
 
     static Connection conect = null;
 
+    /*
+
+    ///// Ejecucion de los metodos. ///////
+
     public static void main(String[] args) {
         //ProbarConexion(); // Solo prueba para conexion SQLServer
         conect = abrirConexion(connectionUrlQA,USERQA,PASSQA);
@@ -39,6 +43,8 @@ public class ConexionSQLServer {
         EjemploProcAlmacenado(conect, idProyecto, usuario,idTestCase,testCycle_id,status,sprint,adjunto);
         CerrarConexion(conect);
     }
+    /////////////////////////
+*/
 
     public static void ProbarConexion(){
 

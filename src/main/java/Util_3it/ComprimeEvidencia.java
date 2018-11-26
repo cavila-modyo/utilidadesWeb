@@ -62,6 +62,7 @@ public class ComprimeEvidencia {
         output.close();
     }
 
+    /*
     public static void main(String[] args) {
         try {
             ComprimeEvidencia z = new ComprimeEvidencia(new File("source.zip"));
@@ -72,6 +73,7 @@ public class ComprimeEvidencia {
             e.printStackTrace();
         }
     }
+    */
 
 
 
