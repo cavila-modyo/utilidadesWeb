@@ -46,7 +46,6 @@ public class InsertaEjecucion {
         Statement stmt = null;
         long estado = 0;
         try {
-
             // Llamada al procedimiento almacenado
             CallableStatement cst = con.prepareCall("{call insertaEjecucion_scope (?,?,?,?,?,?,?,?,?,?)}");
             // Se definen los parámetros de entrada
@@ -103,7 +102,7 @@ public class InsertaEjecucion {
 
 
     // Metodo que haga select al ID_Ejecucion que se actualizará....
-/*
+
     public static void main(String[] args) {
 
         EjecucionesLog obj = new EjecucionesLog();
@@ -126,6 +125,6 @@ public class InsertaEjecucion {
 
         //con.CerrarConexion(conect);
     }
-    */
+
 
 }

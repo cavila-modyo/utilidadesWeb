@@ -4,87 +4,25 @@ import java.sql.*;
 
 public class ConexionSQLServer {
 
-    // JDBC driver name and database URL
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://10.128.216.61,1435/Automatizacion";
-
-    static final String USERDEV = "sa";
-    static final String PASSDEV = "3it123456.";
+    static String Error = "Error: ";
     static final String USERQA = "sa";
     static final String PASSQA = "Calidad3it";
-    //static final String baseDatos = "udla_rotaciones";
     static final String baseDatos = "Automatizacion";
     static final String Query = "select * from usuario;";
-    static final String QueryQA = "Select * from comuna;";
     static final String connectionUrlQA = "jdbc:sqlserver://10.128.216.61:1435;database=" + baseDatos ;
-    static final String connectionUrlDESA = "jdbc:sqlserver://db_desa:1433;database=" + baseDatos ;
-
     static Connection conect = null;
 
     /*
-    ///// Ejecucion de los metodos. ///////
-
     public static void main(String[] args) {
         //ProbarConexion(); // Solo prueba para conexion SQLServer
-        conect = abrirConexion(connectionUrlQA,USERQA,PASSQA);
+        //conect = abrirConexion(connectionUrlQA,USERQA,PASSQA);
+        conect = abrirConexionAutomatizacion();
         //conect = abrirConexion(connectionUrlDESA,USER,PASS);
-        //EjecutarQuery(conect,Query);
+        EjecutarQuery(conect,Query);
         //EjecutarQuery(conect,QueryQA);
-
-        int idProyecto = 2;
-        int usuario = 1;
-        int idTestCase = 2;
-        int testCycle_id = 150;
-        String status = "Test_Procedimiento_Parametros";
-        int sprint = 1;
-        Byte adjunto = 0;
-
-        EjemploProcAlmacenado(conect, idProyecto, usuario,idTestCase,testCycle_id,status,sprint,adjunto);
         CerrarConexion(conect);
     }
-    /////////////////////////
 */
-
-    public static void ProbarConexion(){
-
-        Connection conn = null;
-        Statement stmt = null;
-        try{
-            System.out.println("Connecting to database...");
-            conn = DriverManager.getConnection(connectionUrlDESA,USERDEV,PASSDEV);
-
-            System.out.println("Creating statement...");
-            stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery(Query);
-
-            while(rs.next()){
-                //Retrieve by column name
-                int id      = rs.getInt("Id");
-                String usuario = rs.getString("NombreUsuario");
-                System.out.print(" ID: " + id);
-                System.out.print(", Usuario: " + usuario);
-            }
-            rs.close();
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            System.out.println("Error: " + se.getMessage());
-            se.printStackTrace();
-        }catch(Exception e){
-            System.out.println("Error: " + e.getMessage());
-            e.printStackTrace();
-        }finally{
-            try{
-                if(stmt!=null){stmt.close();}
-            }catch(SQLException se2){}
-            try{
-                if(conn!=null)
-                    conn.close();
-            }catch(SQLException se){
-                se.printStackTrace();
-            }
-        }
-    }
 
     public static Connection abrirConexion(String conection, String user, String pass){
         Connection conn = null;
@@ -143,10 +81,10 @@ public class ConexionSQLServer {
             rs.close();
             stmt.close();
         }catch(SQLException se){
-            System.out.println("Error: " + se.getMessage());
+            System.out.println(Error + se.getMessage());
             se.printStackTrace();
         }catch(Exception e){
-            System.out.println("Error: " + e.getMessage());
+            System.out.println(Error + e.getMessage());
             e.printStackTrace();
         }finally{
             try{
@@ -180,7 +118,7 @@ public class ConexionSQLServer {
             int estado = cst.getInt("ValorDeSalida");
             System.out.println("Estado Ejecución: " + estado);
         } catch (SQLException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            System.out.println(Error + ex.getMessage());
         }finally{
             try{
                 if(con!=null){con.close();}
