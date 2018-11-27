@@ -41,6 +41,7 @@ public class Excel {
         });
     }
 
+    /*
     public static void main(String args[]){
         // C:\Automatizacion\Documentos Prueba\PruebaExcel.xls
         // C:\Automatizacion\Documentos Prueba\PruebaExcel.xlsx
@@ -50,6 +51,7 @@ public class Excel {
         LeerExcel(p);
 
     }
+    */
 
 
     // Se podria agregar un parametro entero para tener en cuenta la cantidad de celdas.

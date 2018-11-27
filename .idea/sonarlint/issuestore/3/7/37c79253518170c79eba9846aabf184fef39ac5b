@@ -1,0 +1,8 @@
+
+[squid:S1118":Add a private constructor to hide the implicit public one.(âÍšşÿÿÿÿ8ğÖıõ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚƒÉüÿÿÿÿ8ğÖıõ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ïéœ·üÿÿÿÿ8ğÖıõ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çµí‘8ŞÒõ,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïËğäúÿÿÿÿ8ğÖıõ,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¦Úõ•úÿÿÿÿ8ğÖıõ,
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­–¹×øÿÿÿÿ8ğÖıõ,
