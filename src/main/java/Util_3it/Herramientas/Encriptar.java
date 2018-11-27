@@ -1,4 +1,4 @@
-package Util_3it;
+package Util_3it.Herramientas;
 
 
 //import com.sun.org.apache.xml.internal.security.utils.Base64;
@@ -65,5 +65,7 @@ public class Encriptar{
         }
         return base64EncryptedString;
     }
+
+
 
 }

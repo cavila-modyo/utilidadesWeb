@@ -22,7 +22,6 @@ public class ConexionSQLServer {
     static Connection conect = null;
 
     /*
-
     ///// Ejecucion de los metodos. ///////
 
     public static void main(String[] args) {
