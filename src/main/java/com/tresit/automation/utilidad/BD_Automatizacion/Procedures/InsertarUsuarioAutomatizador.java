@@ -1,7 +1,8 @@
-package Util_3it.BD_Automatizacion.Procedures;
+package com.tresit.automation.utilidad.BD_Automatizacion.Procedures;
 
-import Util_3it.ConexionSQL.ConexionSQLServer;
-import Util_3it.BD_Automatizacion.Tablas.*;
+import com.tresit.automation.utilidad.BD_Automatizacion.Tablas.UsuarioAutomatizador;
+import com.tresit.automation.utilidad.ConexionSQL.ConexionSQLServer;
+
 
 import java.sql.*;
 

@@ -1,4 +1,4 @@
-package Util_3it.ConexionSQL;
+package com.tresit.automation.utilidad.ConexionSQL;
 
 import java.sql.*;
 

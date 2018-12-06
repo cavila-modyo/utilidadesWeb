@@ -1,4 +1,4 @@
-package Util_3it.BD_Automatizacion.Tablas;
+package com.tresit.automation.utilidad.BD_Automatizacion.Tablas;
 
 public class UsuarioAutomatizador {
 

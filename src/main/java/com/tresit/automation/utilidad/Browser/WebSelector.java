@@ -1,4 +1,4 @@
-package Util_3it.Browser;
+package com.tresit.automation.utilidad.Browser;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

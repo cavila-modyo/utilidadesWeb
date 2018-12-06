@@ -1,8 +1,10 @@
-package Util_3it.BD_Automatizacion.Procedures;
+package com.tresit.automation.utilidad.BD_Automatizacion.Procedures;
 
-import Util_3it.BD_Automatizacion.Tablas.*;
-import Util_3it.ConexionSQL.*;
+import com.tresit.automation.utilidad.BD_Automatizacion.Tablas.EjecucionesLog;
+import com.tresit.automation.utilidad.ConexionSQL.ConexionSQLServer;
+
 import java.sql.*;
+
 
 public class InsertaEjecucion {
 
