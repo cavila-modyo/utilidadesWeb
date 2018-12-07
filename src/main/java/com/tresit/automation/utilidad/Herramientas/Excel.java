@@ -42,9 +42,7 @@ public class Excel {
         File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         LeerExcel(f);
         LeerExcel(p);
-
-    }
-    */
+    }*/
 
 
     // Se podria agregar un parametro entero para tener en cuenta la cantidad de celdas.
@@ -197,6 +195,7 @@ public class Excel {
 
 // (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_STRING)?hssfRow.getCell(c).getStringCellValue():
     // XSSFRow hssfRow = hssfSheet.getRow(rowNum);
+
     /*
     private String obtenerValorCeldaHSSF(XSSFRow celda) {
         if (celda.getCell(0).getCellType() != Cell.CELL_TYPE_STRING) {
@@ -204,7 +203,6 @@ public class Excel {
                 return NumberToTextConverter.toText(celda.);
             }
         }
-
         return celda.getStringCellValue();
     }
 
@@ -214,7 +212,6 @@ public class Excel {
                 return NumberToTextConverter.toText(celda.getNumericCellValue());
             }
         }
-
         return celda.getStringCellValue();
     }
 */
@@ -355,6 +352,7 @@ public class Excel {
         file.close();
     }
 
+
 /*
     public static String convertXLS2XLSX(String xlsFilePath) {
         Map cellStyleMap = new HashMap();
@@ -406,6 +404,7 @@ public class Excel {
         return xlsxFilePath;
     }
 
+    /*
     private static void copyRowProperties(Row rowOut, Row rowIn, Map cellStyleMap) {
         rowOut.setRowNum(rowIn.getRowNum());
         rowOut.setHeight(rowIn.getHeight());
@@ -419,7 +418,6 @@ public class Excel {
                     rowIn.getSheet().getColumnWidth(cellIn.getColumnIndex()));
             copyCellProperties(cellOut, cellIn, cellStyleMap);
         }
-
     }
 
     private static void copyCellProperties(Cell cellOut, Cell cellIn, Map cellStyleMap) {
@@ -508,7 +506,6 @@ public class Excel {
         }
         cellOut.setCellStyle(styleOut);
     }
-
 */
 
     // Extraer los datos de alguna columna con error
@@ -554,9 +551,6 @@ public class Excel {
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-
     }
-
-
 
 }

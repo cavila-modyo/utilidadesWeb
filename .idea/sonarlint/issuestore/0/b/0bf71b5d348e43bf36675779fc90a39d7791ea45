@@ -1,51 +1,0 @@
-
-psquid:S3008"ORename this field "DATA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“À„Ýøÿÿÿÿ8²ºˆ©õ,
-psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûµêö
-Ysquid:S3878"8Remove this array creation and simply pass the elements.(ØÒ¡‚üÿÿÿÿ8²ºˆ©õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‰ˆÙÍ8²ºˆ©õ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡þÏÖøÿÿÿÿ8£×­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Õò›“8‡þ­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(žší8‡þ­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬§†®8‡þ­«õ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©©¹øÿÿÿÿ8‡þ­«õ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(×¦†×úÿÿÿÿ8‡þ­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ñ¾Þ¯8‡þ­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËòØ˜8‡þ­«õ,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©©¹øÿÿÿÿ8‡þ­«õ,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(æÄ¦Í8‡þ­«õ,
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÕôÏ8‡þ­«õ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(íÿ¿•8‡þ­«õ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(â»º‰üÿÿÿÿ8‡þ­«õ,
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(†ÝÉ18‡þ­«õ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(—Çú•ûÿÿÿÿ8‡þ­«õ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(íÿ¿•8‡þ­«õ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(â»º‰üÿÿÿÿ8‡þ­«õ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(äìÎÆ8‡þ­«õ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ˆžÕÙ8‡þ­«õ,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.( ƒŽÙ8‡þ­«õ,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ê¡äçÿÿÿÿÿ8‡þ­«õ,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8‡þ­«õ,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8‡þ­«õ,
-Csquid:S1481"'Remove this unused "sb" local variable.(‰Áúƒ8‡þ­«õ,
-Csquid:S1481"'Remove this unused "sb" local variable.(‰Áúƒ8‡þ­«õ,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(Ö¯âÍúÿÿÿÿ8‡þ­«õ,
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö¯âÍúÿÿÿÿ8‡þ­«õ,
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßõà€8‡þ­«õ,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(é€…”øÿÿÿÿ8‡þ­«õ,
-Rsquid:S1854"6Remove this useless assignment to local variable "sb".(‰Áúƒ8‡þ­«õ,
-Rsquid:S1854"6Remove this useless assignment to local variable "sb".(‰Áúƒ8‡þ­«õ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‡þ­«õ,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‡þ­«õ,
-{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8‡þ­«õ,
-{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8‡þ­«õ,

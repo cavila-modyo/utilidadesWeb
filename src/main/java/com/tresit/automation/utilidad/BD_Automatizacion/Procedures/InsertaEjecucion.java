@@ -104,7 +104,7 @@ public class InsertaEjecucion {
 
 
     // Metodo que haga select al ID_Ejecucion que se actualizará....
-
+/*
     public static void main(String[] args) {
 
         EjecucionesLog obj = new EjecucionesLog();
@@ -127,6 +127,6 @@ public class InsertaEjecucion {
 
         //con.CerrarConexion(conect);
     }
-
+*/
 
 }
