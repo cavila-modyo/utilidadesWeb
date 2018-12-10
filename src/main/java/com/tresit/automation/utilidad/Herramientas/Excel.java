@@ -1,5 +1,6 @@
 package com.tresit.automation.utilidad.Herramientas;
 
+import com.opencsv.CSVReader;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
@@ -36,17 +37,16 @@ public class Excel {
 
     /*
     public static void main(String args[]){
+        //Csv_Leer();
         // C:\Automatizacion\Documentos Prueba\PruebaExcel.xls
         // C:\Automatizacion\Documentos Prueba\PruebaExcel.xlsx
-        File f = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        LeerExcel(f);
-        LeerExcel(p);
-    }*/
+        //File f = new File("C:\\Users\\3it\\Downloads\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
+        //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
+        //LeerExcel(f);
+        //LeerExcel(p);
+    }
+*/
 
-
-    // Se podria agregar un parametro entero para tener en cuenta la cantidad de celdas.
-    // Hacer un metodo aparte que se ajuste a la impresion de todas las celdas segun el parametro
     public static void LeerExcel(File archivo) {
         String extension = obtenerExtension(archivo);
         try {
@@ -121,7 +121,6 @@ public class Excel {
         }
     }
 
-
     /** Count max number of nonempty cells in sheet rows */
     private static int getColumnsCountXLSX(XSSFSheet xssfSheet) {
         int result = 0;
@@ -193,28 +192,6 @@ public class Excel {
         return retorno;
     }
 
-// (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_STRING)?hssfRow.getCell(c).getStringCellValue():
-    // XSSFRow hssfRow = hssfSheet.getRow(rowNum);
-
-    /*
-    private String obtenerValorCeldaHSSF(XSSFRow celda) {
-        if (celda.getCell(0).getCellType() != Cell.CELL_TYPE_STRING) {
-            if (celda.getCell(0).getCellType() != Cell.CELL_TYPE_NUMERIC) {
-                return NumberToTextConverter.toText(celda.);
-            }
-        }
-        return celda.getStringCellValue();
-    }
-
-    private String obtenerValorCeldaXSSF(XSSFCell celda) {
-        if (celda.getCellTypeEnum() != CellType.STRING) {
-            if (celda.getCellTypeEnum() == CellType.NUMERIC) {
-                return NumberToTextConverter.toText(celda.getNumericCellValue());
-            }
-        }
-        return celda.getStringCellValue();
-    }
-*/
 
     public void CrearExcel_XLSX (){
 
@@ -353,170 +330,13 @@ public class Excel {
     }
 
 
-/*
-    public static String convertXLS2XLSX(String xlsFilePath) {
-        Map cellStyleMap = new HashMap();
-        String xlsxFilePath = null;
-        Workbook workbookIn = null;
-        File xlsxFile = null;
-        Workbook workbookOut = null;
-        OutputStream out = null;
-        String XLSX = ".xlsx";
-        try {
-            InputStream inputStream = new FileInputStream(xlsFilePath);
-            xlsxFilePath = xlsFilePath.substring(0, xlsFilePath.lastIndexOf('.')) + XLSX;
-            workbookIn = new HSSFWorkbook(inputStream);
-            xlsxFile = new File(xlsxFilePath);
-            if (xlsxFile.exists())
-                xlsxFile.delete();
-            workbookOut = new XSSFWorkbook();
-            int sheetCnt = workbookIn.getNumberOfSheets();
-
-            for (int i = 0; i < sheetCnt; i++) {
-                Sheet sheetIn = workbookIn.getSheetAt(i);
-                Sheet sheetOut = workbookOut.createSheet(sheetIn.getSheetName());
-                Iterator rowIt = sheetIn.rowIterator();
-                while (rowIt.hasNext()) {
-                    Row rowIn = (Row) rowIt.next();
-                    Row rowOut = sheetOut.createRow(rowIn.getRowNum());
-                    copyRowProperties(rowOut, rowIn,cellStyleMap);
-                }
-            }
-            out = new BufferedOutputStream(new FileOutputStream(xlsxFile));
-            workbookOut.write(out);
-        } catch (Exception ex) {
-            System.err.println("Exception Occured inside transFormXLS2XLSX :: file Name :: " + xlsFilePath
-                    + ":: reason ::" + ex.getMessage());
-            ex.printStackTrace();
-            xlsxFilePath = null;
-        } finally {
-            try {
-                if (workbookOut != null)
-                    workbookOut.close();
-                if (workbookIn != null)
-                    workbookIn.close();
-                if (out != null)
-                    out.close();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-        }
-        return xlsxFilePath;
-    }
-
     /*
-    private static void copyRowProperties(Row rowOut, Row rowIn, Map cellStyleMap) {
-        rowOut.setRowNum(rowIn.getRowNum());
-        rowOut.setHeight(rowIn.getHeight());
-        rowOut.setHeightInPoints(rowIn.getHeightInPoints());
-        rowOut.setZeroHeight(rowIn.getZeroHeight());
-        Iterator cellIt = rowIn.cellIterator();
-        while (cellIt.hasNext()) {
-            Cell cellIn = (Cell) cellIt.next();
-            Cell cellOut = rowOut.createCell(cellIn.getColumnIndex(), cellIn.getCellType());
-            rowOut.getSheet().setColumnWidth(cellOut.getColumnIndex(),
-                    rowIn.getSheet().getColumnWidth(cellIn.getColumnIndex()));
-            copyCellProperties(cellOut, cellIn, cellStyleMap);
-        }
-    }
-
-    private static void copyCellProperties(Cell cellOut, Cell cellIn, Map cellStyleMap) {
-
-        Workbook wbOut = cellOut.getSheet().getWorkbook();
-        HSSFPalette hssfPalette = ((HSSFWorkbook) cellIn.getSheet().getWorkbook()).getCustomPalette();
-        switch (cellIn.getCellType()) {
-            case Cell.CELL_TYPE_BLANK:
-                break;
-
-            case Cell.CELL_TYPE_BOOLEAN:
-                cellOut.setCellValue(cellIn.getBooleanCellValue());
-                break;
-
-            case Cell.CELL_TYPE_ERROR:
-                cellOut.setCellValue(cellIn.getErrorCellValue());
-                break;
-
-            case Cell.CELL_TYPE_FORMULA:
-                cellOut.setCellFormula(cellIn.getCellFormula());
-                break;
-
-            case Cell.CELL_TYPE_NUMERIC:
-                cellOut.setCellValue(cellIn.getNumericCellValue());
-                break;
-
-            case Cell.CELL_TYPE_STRING:
-                cellOut.setCellValue(cellIn.getStringCellValue());
-                break;
-        }
-        HSSFCellStyle styleIn = (HSSFCellStyle) cellIn.getCellStyle();
-        XSSFCellStyle styleOut = null;
-        if (cellStyleMap.get(styleIn.getIndex()) != null) {
-            styleOut = (XSSFCellStyle) cellStyleMap.get(styleIn.getIndex());
-        } else {
-            styleOut = (XSSFCellStyle) wbOut.createCellStyle();
-            styleOut.setAlignment(styleIn.getAlignment());
-            DataFormat format = wbOut.createDataFormat();
-            styleOut.setDataFormat(format.getFormat(styleIn.getDataFormatString()));
-            HSSFColor forgroundColor = styleIn.getFillForegroundColorColor();
-            if (forgroundColor != null) {
-                short[] foregroundColorValues = forgroundColor.getTriplet();
-                styleOut.setFillForegroundColor(new XSSFColor(new java.awt.Color(foregroundColorValues[0],
-                        foregroundColorValues[1], foregroundColorValues[2])));
-                styleOut.setFillPattern(styleIn.getFillPattern());
-            }
-            styleOut.setFillPattern(styleIn.getFillPattern());
-            styleOut.setBorderBottom(styleIn.getBorderBottom());
-            styleOut.setBorderLeft(styleIn.getBorderLeft());
-            styleOut.setBorderRight(styleIn.getBorderRight());
-            styleOut.setBorderTop(styleIn.getBorderTop());
-            HSSFColor bottom = hssfPalette.getColor(styleIn.getBottomBorderColor());
-            if (bottom != null) {
-                short[] bottomColorArray = bottom.getTriplet();
-                styleOut.setBottomBorderColor(new XSSFColor(new java.awt.Color(bottomColorArray[0],
-                        bottomColorArray[1], bottomColorArray[2])));
-            }
-            HSSFColor top = hssfPalette.getColor(styleIn.getTopBorderColor());
-            if (top != null) {
-                short[] topColorArray = top.getTriplet();
-                styleOut.setTopBorderColor(new XSSFColor(new java.awt.Color(topColorArray[0], topColorArray[1],
-                        topColorArray[2])));
-            }
-            HSSFColor left = hssfPalette.getColor(styleIn.getLeftBorderColor());
-            if (left != null) {
-                short[] leftColorArray = left.getTriplet();
-                styleOut.setLeftBorderColor(new XSSFColor(new java.awt.Color(leftColorArray[0], leftColorArray[1],
-                        leftColorArray[2])));
-            }
-            HSSFColor right = hssfPalette.getColor(styleIn.getRightBorderColor());
-            if (right != null) {
-                short[] rightColorArray = right.getTriplet();
-                styleOut.setRightBorderColor(new XSSFColor(new java.awt.Color(rightColorArray[0], rightColorArray[1],
-                        rightColorArray[2])));
-            }
-            styleOut.setVerticalAlignment(styleIn.getVerticalAlignment());
-            styleOut.setHidden(styleIn.getHidden());
-            styleOut.setIndention(styleIn.getIndention());
-            styleOut.setLocked(styleIn.getLocked());
-            styleOut.setRotation(styleIn.getRotation());
-            styleOut.setShrinkToFit(styleIn.getShrinkToFit());
-            styleOut.setVerticalAlignment(styleIn.getVerticalAlignment());
-            styleOut.setWrapText(styleIn.getWrapText());
-            cellOut.setCellComment(cellIn.getCellComment());
-            cellStyleMap.put(styleIn.getIndex(), styleOut);
-        }
-        cellOut.setCellStyle(styleOut);
-    }
-*/
-
-    // Extraer los datos de alguna columna con error
-/*
     public static void main (String args[]){
         String rutaArchivos = "C:\\Automatizacion\\ATC_TEST\\UDLA\\CASOS_DANI\\UDSGP_06030\\";
         String path = "C:\\Users\\3it\\Downloads";
         List<File> listaExcel = ArchivosExcelDeCarpeta(path);
         cortarPegarArchivo(listaExcel,rutaArchivos);
-    }
-*/
+    }*/
 
     public static List<File> ArchivosExcelDeCarpeta(String path){
 
@@ -552,5 +372,6 @@ public class Excel {
             System.out.println(e.getMessage());
         }
     }
+
 
 }

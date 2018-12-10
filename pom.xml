@@ -13,29 +13,12 @@
 
     <dependencies>
 
-        <!--Se agrega el maven compiler-->
-        <!--<dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
+        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
             <version>3.3</version>
-            <type>maven-plugin</type>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-install-plugin</artifactId>
-            <version>2.4</version>
-            <type>maven-plugin</type>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>2.7</version>
-            <type>maven-plugin</type>
-        </dependency>-->
-        <!--Se agrega el maven compiler-->
-
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>

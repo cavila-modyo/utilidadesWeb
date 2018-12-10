@@ -1,0 +1,87 @@
+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¾ðÕ˜ýÿÿÿÿ8¥ŠÝÆù,
+‚squid:S3008"fRename this field "btn_errorPreliminarDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†±â¡8¥ŠÝÆù,
+squid:S3008"`Rename this field "cmbCampus_LosCastanos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ±¿‹ýÿÿÿÿ8¥ŠÝÆù,
+rsquid:S3008"VRename this field "txt_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Û¤Á8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÜóÂ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Áÿžê8¥ŠÝÆù,
+[squid:S1118":Add a private constructor to hide the implicit public one.(éíæÍûÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡š•™ýÿÿÿÿ8¥ŠÝÆù,
+squid:S3008"^Rename this field "cmbSede_ViÃ±aDelMar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜×ÓËøÿÿÿÿ8¥ŠÝÆù,
+{squid:S3008"ZRename this field "cmbCampus_Maipu" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥µ¦Ãøÿÿÿÿ8¥ŠÝÆù,
+zsquid:S3008"YRename this field "btn_AtrasPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔýŠÑùÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ˆ¹ðþÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆòÚü8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ö¯û ûÿÿÿÿ8¥ŠÝÆù,
+ysquid:S3008"]Rename this field "btn_ContinuarPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û«¼É8¥ŠÝÆù,
+tsquid:S3008"SRename this field "txt_pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ã’ùüÿÿÿÿ8¥ŠÝÆù,
+squid:S3008"^Rename this field "cmbCampus_Chacabuco" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ØÓÀüÿÿÿÿ8¥ŠÝÆù,
+Šsquid:S3008"iRename this field "cmbCarrera_NutricionyDietetica" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©°ÙŽþÿÿÿÿ8¥ŠÝÆù,
+ƒsquid:S3008"bRename this field "descargaResultado_Cupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó€¦¦úÿÿÿÿ8¥ŠÝÆù,
+ƒsquid:S3008"hRename this field "cmbCarrera_TerapiaOcupacional" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¬•8¥ŠÝÆù,
+ssquid:S3008"RRename this field "Excelin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úè¤×øÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑ…8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Šˆøÿÿÿÿ8¥ŠÝÆù,
+|squid:S3008"`Rename this field "cmbCampus_Providencia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ââŠ•8¥ŠÝÆù,
+|squid:S3008"`Rename this field "btn_errorCupoDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¯Ûú8¥ŠÝÆù,
+ƒsquid:S3008"gRename this field "cmbCarrera_TecnicoEnfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨›8¥ŠÝÆù,
+{squid:S3008"ZRename this field "EncabezadoPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âç½Èþÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¯ŽÞúÿÿÿÿ8¥ŠÝÆù,
+~squid:S3008"bRename this field "cmbCarrera_Kinesiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éîÑô8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ýã‘¯øÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ŸùÇüÿÿÿÿ8²©àÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ãº Ê8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•»æÞýÿÿÿÿ8¥ŠÝÆù,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(»óØ_8¥ŠÝÆù,
+zsquid:S3008"^Rename this field "cmbCampus_LaFlorida" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†îà£8¥ŠÝÆù,
+~squid:S3008"]Rename this field "btn_ContinuarPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¦Äþÿÿÿÿ8¥ŠÝÆù,
+Œsquid:S3008"kRename this field "descargaResultado_AlumnosDetalle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ‹íùÿÿÿÿ8¥ŠÝÆù,
+squid:S3008"`Rename this field "cmbCarrera_Enfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êœáÎýÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÝ ³ûÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Åì8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Þ™Ž8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­±±Ù8¥ŠÝÆù,
+{squid:S3008"ZRename this field "EncabezadoPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®­…¤úÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(üÚ‘€8¥ŠÝÆù,
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬±‘ýÿÿÿÿ8¥ŠÝÆù,
+{squid:S3008"ZRename this field "EncabezadoPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÄ„ðùÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Û÷Úˆ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿà’ý8¥ŠÝÆù,
+…squid:S3008"jRename this field "label_DocumentoPreliminarSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àì’J8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×ƒÀÿÿÿÿÿ8¥ŠÝÆù,
+jsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×â:8¥ŠÝÆù,
+€squid:S3008"dRename this field "cmbCarrera_Fonoaudiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†öŽ‹8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÿŒÇýûÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ·›ï8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šû±¨8¥ŠÝÆù,
+jsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¸8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý³ýŒþÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß‡Ô¸8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍŒªÝ8¥ŠÝÆù,
+}squid:S3008"\Rename this field "cmbCampus_ElBodal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â£ÄÖùÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ã‘Ë‚8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ôð®8¥ŠÝÆù,
+psquid:S3008"TRename this field "btn_Login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÐïÒá8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô¡Ÿ8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(”ÄÃœúÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚«Ê 8¥ŠÝÆù,
+ysquid:S3008"]Rename this field "cmbSede_Concepcion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”²™8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(«ŸÍñ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÈ€ÿøÿÿÿÿ8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸØìÆ8¥ŠÝÆù,
+squid:S3008"`Rename this field "cmbSede_Metropolitana" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äûãýÿÿÿÿ8¥ŠÝÆù,
+€squid:S3008"dRename this field "descargaResultado_Alumnos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×é•¥8¥ŠÝÆù,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(é‰©Ôùÿÿÿÿ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³¡çüÿÿÿÿ8¥ŠÝÆù,
+„squid:S3008"cRename this field "cmbCampus_SantiagoCentro" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒË»Ìûÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶’òì8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ‹‡¡úÿÿÿÿ8¥ŠÝÆù,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ç‹°Œ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì˜¯€ýÿÿÿÿ8¥ŠÝÆù,
+zsquid:S3008"YRename this field "btn_AtrasPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¨öžÿÿÿÿÿ8¥ŠÝÆù,
+vsquid:S3008"ZRename this field "LabelPreliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½©û8¥ŠÝÆù,
+€squid:S3008"dRename this field "label_DocumentoCupoSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ÐÖÜ8¥ŠÝÆù,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(« 8¥ŠÝÆù,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùœ÷Ñ8¥ŠÝÆù,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Â×¯øÿÿÿÿ8²©àÆù,
+qsquid:S3008"URename this field "Labelcupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÆ³´8¥ŠÝÆù,
