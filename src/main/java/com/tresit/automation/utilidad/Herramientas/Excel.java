@@ -34,6 +34,7 @@ public class Excel {
         });
     }
 
+    /*
 
     public static void main(String args[]){
         //Csv_Leer();
@@ -60,7 +61,7 @@ public class Excel {
         //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         //LeerExcel(p);
 
-    }
+    }*/
 
     public static void comparaListasResultado(File f, File p, String rutaArchivoComparacion){
 
