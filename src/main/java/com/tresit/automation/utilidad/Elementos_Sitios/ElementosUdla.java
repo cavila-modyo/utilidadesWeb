@@ -4,41 +4,24 @@ public class ElementosUdla {
 
 // Clase que será utilizada para la identificacion de los elementos del sitio UDLA
 
-    //private static String txt_usuario = "//*[@id=\"login-form\"]/div[2]/div[1]/input"; // /html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[1]/input[1]
     private static String txt_usuario = "/html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[1]/input[1]"; //
-    //private static String txt_pass = "//*[@id=\"login-form\"]/div[2]/div[2]/input";  // /html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]
     private static String txt_pass = "/html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[2]/input[1]";  //
-    //private static String btn_Login = "//*[@id=\"login-form\"]/div[2]/div[3]/button";  // /html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[3]/button[1]
     private static String btn_Login = "/html[1]/body[1]/app-root[1]/app-login[1]/div[1]/div[1]/form[1]/div[2]/div[3]/button[1]";  //
 
-    //private static String opcionInternado = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[1]/div/button[1]";
     private static String opcionInternado = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]";
-    //private static String opcionPasantia = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[1]/div/button[2]";
     private static String opcionPasantia = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[2]";
-    //private static String cmbSede = "//*[@id=\"cdk-step-content-0-0\"]/div/div[2]/div[1]/sui-multi-select";
     private static String cmbSede = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/sui-multi-select[1]";
-    //private static String cmbSede_Metropolitana = "//*[@id=\"cdk-step-content-0-0\"]/div/div[2]/div[1]/sui-multi-select/div[2]/sui-select-option[1]";
     private static String cmbSede_Metropolitana = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/sui-multi-select[1]/div[2]/sui-select-option[1]";
-    //private static String cmbSede_Concepcion = "//*[@id=\"cdk-step-content-0-0\"]/div/div[2]/div[1]/sui-multi-select/div[2]/sui-select-option[2]";
     private static String cmbSede_Concepcion = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/sui-multi-select[1]/div[2]/sui-select-option[2]";
-    //private static String cmbSede_ViñaDelMar = "//*[@id=\"cdk-step-content-0-0\"]/div/div[2]/div[1]/sui-multi-select/div[2]/sui-select-option[3]";
     private static String cmbSede_ViñaDelMar = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/sui-multi-select[1]/div[2]/sui-select-option[3]";
 
-    //private static String cmbCampus = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[2]/sui-multi-select";
     private static String cmbCampus = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]";
-    //private static String cmbCampus_Providencia = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[2]/sui-multi-select/div[2]/sui-select-option[1]";
     private static String cmbCampus_Providencia = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[1]";
-    //private static String cmbCampus_LaFlorida = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[2]/sui-multi-select/div[2]/sui-select-option[2]";
     private static String cmbCampus_LaFlorida = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[2]";
-    //private static String cmbCampus_Maipu = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[2]/sui-multi-select/div[2]/sui-select-option[3]";
     private static String cmbCampus_Maipu = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[3]";
-    //private static String cmbCampus_SantiagoCentro = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[2]/sui-multi-select/div[2]/sui-select-option[4]";
     private static String cmbCampus_SantiagoCentro = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[4]";
     private static String cmbCampus_ElBodal = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[5]";
-    private static String cmbCampus_Chacabuco = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[6]";
-    private static String cmbCampus_LosCastanos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[7]";
-
-    //private static String cmbCarrera = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[2]/div[3]/sui-multi-select";
+    private static String cmbCampus_LosCastanos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/sui-multi-select[1]/div[2]/sui-select-option[6]";
     private static String cmbCarrera = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/sui-multi-select[1]";
     private static String cmbCarrera_Enfermeria = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/sui-multi-select[1]/div[2]/sui-select-option[1]";
     private static String cmbCarrera_Fonoaudiologia = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/sui-multi-select[1]/div[2]/sui-select-option[2]";
@@ -47,17 +30,11 @@ public class ElementosUdla {
     private static String cmbCarrera_TerapiaOcupacional = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/sui-multi-select[1]/div[2]/sui-select-option[5]";
     private static String cmbCarrera_TecnicoEnfermeria = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/sui-multi-select[1]/div[2]/sui-select-option[6]";
 
-    //private static String btn_AtrasPaso2 = "//*[@id=\"cdk-step-content-1-2\"]/div/div/button[1]";
     private static String btn_AtrasPaso2 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]";
-    //private static String btn_AtrasPaso3 = "//*[@id=\"cdk-step-content-1-2\"]/div/div/button[1]";
     private static String btn_AtrasPaso3 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[1]";
-    //private static String btn_ContinuarPaso1 = "//*[@id=\"cdk-step-content-0-0\"]/div/div[3]/button";
     private static String btn_ContinuarPaso1 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/div[1]/div[1]/div[1]/div[3]/button[1]";
-    //private static String btn_ContinuarPaso2 = "//*[@id=\\\"cdk-step-content-0-0\\\"]/div/div[3]/button";
     private static String btn_ContinuarPaso2 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/button[2]";
-    //private static String Labelcupos = "//*[@id=\\\"div1\\\"]/div/div[2]/label";
     private static String Labelcupos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/angular-file-uploader[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/label[1]";
-    //private static String LabelPreliminar = "//*[@id=\"div1\"]/div/div[2]/label";
     private static String LabelPreliminar = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/angular-file-uploader[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/label[1]";
     private static String popupCupo = "//angular-file-uploader[@id=\"Cupos\"]/div/input";
     private static String popupPreliminar = "//angular-file-uploader[@id=\"Alumnos\"]/div/input";
@@ -68,7 +45,8 @@ public class ElementosUdla {
     private static String descargaResultado = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[2]/span[1]";
     private static String descargaResultado_Cupos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[3]/span[1]";
     private static String descargaResultado_Alumnos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[4]/span[1]";
-    private static String descargaResultado_AlumnosDetalle = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[5]/span[1]";
+    private static String descargaResultado_AlumnosFaltante = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[5]/span[1]";
+    private static String descargaResultado_AlumnosFaltanteDetalle = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[6]/span[1]";
 
     private static String label_DocumentoCupoSubido = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]";
     private static String label_DocumentoPreliminarSubido = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/span[1]";
@@ -134,10 +112,6 @@ public class ElementosUdla {
 
     public static String getCmbCampus_ElBodal() {
         return cmbCampus_ElBodal;
-    }
-
-    public static String getCmbCampus_Chacabuco() {
-        return cmbCampus_Chacabuco;
     }
 
     public static String getCmbCampus_LosCastanos() {
@@ -232,10 +206,6 @@ public class ElementosUdla {
         return descargaResultado_Alumnos;
     }
 
-    public static String getDescargaResultado_AlumnosDetalle() {
-        return descargaResultado_AlumnosDetalle;
-    }
-
     public static String getLabel_DocumentoCupoSubido() {
         return label_DocumentoCupoSubido;
     }
@@ -252,5 +222,8 @@ public class ElementosUdla {
         return btn_errorPreliminarDescarga;
     }
 
+    public static String getDescargaResultado_AlumnosFaltante() {return descargaResultado_AlumnosFaltante;    }
+
+    public static String getDescargaResultado_AlumnosFaltanteDetalle() {return descargaResultado_AlumnosFaltanteDetalle;}
 
 }

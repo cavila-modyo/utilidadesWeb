@@ -20,7 +20,7 @@ public class WebSelector {
         //ChromeOptions options = new ChromeOptions();
         //options.setExperimentalOption("prefs", preferences);
 
-        System.setProperty("webdriver.chrome.driver", "C://Selenium//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C://Automatizacion//WebDriver//chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(url);
@@ -39,7 +39,7 @@ public class WebSelector {
         //options.setExperimentalOption("prefs", preferences);
         //options.setCapability("","");
 
-        System.setProperty("webdriver.edge.driver", "C://Selenium//MicrosoftWebDriver.exe");
+        System.setProperty("webdriver.edge.driver", "C://Automatizacion//WebDriver//MicrosoftWebDriver.exe");
         EdgeDriver driver = new EdgeDriver();
         driver.get(url);
         return driver;
@@ -55,7 +55,7 @@ public class WebSelector {
         //FirefoxOptions option = new FirefoxOptions();
         //option.setProfile(profile);
 
-        System.setProperty("webdriver.gecko.driver", "C://Selenium//geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "C://Automatizacion//WebDriver//geckodriver.exe");
         FirefoxDriver driver = new FirefoxDriver();
         driver.get(url);
         return driver;
