@@ -355,14 +355,16 @@ public class Excel {
     }
 
 
-/*
+    /*
     public static void main (String args[]){
-        String rutaArchivos = "C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\CarpetaX";
+        String rutaArchivos = "C:\\Automatizacion\\UDSGP-255\\Prueba";
         String path = "C:\\Users\\3it\\Downloads";
         List<File> listaExcel = ArchivosExcelDeCarpeta(path);
-        cortarPegarArchivo(listaExcel,rutaArchivos);
-    }
-    */
+        for (File child : listaExcel ){
+            cortarPegarArchivo(child,rutaArchivos);
+        }
+    }*/
+
 
     public static List<File> ArchivosExcelDeCarpeta(String path){
 
@@ -383,24 +385,26 @@ public class Excel {
         return listaExcel;
     }
 
-    public static void cortarPegarArchivo(List<File> listaExcel, String path){
+    // Cambiar para que reciba de un archivo excel y nos retorne la ruta del path
+    public static String cortarPegarArchivo(File Excel, String path){
 
         try{
             File folder = new File(path);
             if (!folder.isDirectory()) {
                 folder.mkdirs();
             }
-            for (File child : listaExcel ){
-                boolean success = child.renameTo(new File(path, child.getName()));
+            //for (File child : listaExcel ){
+                boolean success = Excel.renameTo(new File(path, Excel.getName()));
                 if (!success) {
                     System.out.println("error en la copia de archivo.");
                 }else{
-                    System.out.println("Archivo: " + child.getName() + " copiado a ruta.. " + path);
+                    System.out.println("Archivo: " + Excel.getName() + " copiado a ruta.. " + path);
                 }
-            }
+            //}
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
+        return path + "\\" + Excel.getName();
     }
 
 
