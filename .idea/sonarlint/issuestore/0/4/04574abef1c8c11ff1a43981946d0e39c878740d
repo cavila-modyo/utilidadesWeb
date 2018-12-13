@@ -1,14 +1,26 @@
 
-µ%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(¦Å®Õûÿÿÿÿ8ó¬’Ïù,
-µ%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(¨’¼ûøÿÿÿÿ8ó¬’Ïù,
-squid:S2159""zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(Ş¹ùïûÿÿÿÿ8ó¬’Ïù,
-usquid:S3008"RRename this field "Usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êôü—ıÿÿÿÿ8ó¬’Ïù,
-nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(ˆ—¯µüÿÿÿÿ8ó¬’Ïù,
-isquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(Çµí‘8ó¬’Ïù,
-usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(¨’¼ûøÿÿÿÿ8ó¬’Ïù,
-]squid:S1118":Add a private constructor to hide the implicit public one.(ğşñıÿÿÿÿ8ó¬’Ïù,
-rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨’¼ûøÿÿÿÿ8ó¬’Ïù,
-~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’€Ôúÿÿÿÿ8ó¬’Ïù,
-[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ó¬’Ïù,
-[squid:UselessImportCheck
-"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ó¬’Ïù,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÌŞÁú,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çµí‘8ÌŞÁú,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šüíüÿÿÿÿ8ÌŞÁú,
+Ysquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÌŞÁú,
+³%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(¨’¼ûøÿÿÿÿ8ÌŞÁú,
+³%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(¦Å®Õûÿÿÿÿ8ÌŞÁú,
+ssquid:S3008"RRename this field "Usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êôü—ıÿÿÿÿ8ÌŞÁú,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼ªÜ¾8ÌŞÁú,
+›squid:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(Ş¹ùïûÿÿÿÿ8ÌŞÁú,
+›squid:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(Ş¹ùïûÿÿÿÿ8ÌŞÁú,
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÊµ¥8ÌŞÁú,
+?squid:S1148"#Use a logger to log this exception.(Ç’Çê8ÌŞÁú,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 67 to the 15 allowed.(¨’¼ûøÿÿÿÿ8ÌŞÁú,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş²Åƒúÿÿÿÿ8ÌŞÁú,
+|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’€Ôúÿÿÿÿ8ÌŞÁú,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¼ªÜ¾8ÌŞÁú,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 81 to the 15 allowed.(šüíüÿÿÿÿ8ÌŞÁú,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨’¼ûøÿÿÿÿ8ÌŞÁú,
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆ—¯µüÿÿÿÿ8ÌŞÁú,
+psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ³÷Áùÿÿÿÿ8ÌŞÁú,
+³%squid:RedundantThrowsDeclarationCheck"xRemove the declaration of thrown exception 'java.io.FileNotFoundException' which is a subclass of 'java.io.IOException'.(šüíüÿÿÿÿ8ÌŞÁú,
+Ksquid:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8ÌŞÁú,
+b
+squid:S899"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8ÌŞÁú,
+Ysquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÌŞÁú,

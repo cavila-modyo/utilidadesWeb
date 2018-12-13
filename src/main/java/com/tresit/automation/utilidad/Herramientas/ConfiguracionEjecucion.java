@@ -4,7 +4,6 @@ public class ConfiguracionEjecucion {
 
     private String Carpeta;
     private String NombreCaso;
-    private String NombreTexto;
     private String PathDescargasUsuario;
     private String RutaArchivoCupo;
     private String RutaArchivoPreliminar;
@@ -30,14 +29,6 @@ public class ConfiguracionEjecucion {
 
     public void setNombreCaso(String nombreCaso) {
         NombreCaso = nombreCaso;
-    }
-
-    public String getNombreTexto() {
-        return NombreTexto;
-    }
-
-    public void setNombreTexto(String nombreTexto) {
-        NombreTexto = nombreTexto;
     }
 
     public String getPathDescargasUsuario() {

@@ -95,10 +95,6 @@ public class Texto {
                     String[] parts = cadena.trim().split("=");
                     configEjecucion.setNombreCaso(parts.length > 1 ? parts[1] : default_);
                 }
-                if (cadena.contains("NombreTexto")) {
-                    String[] parts = cadena.trim().split("=");
-                    configEjecucion.setNombreTexto(parts.length > 1 ? parts[1] : default_);
-                }
                 if (cadena.contains("PathDescargasUsuario")) {
                     String[] parts = cadena.trim().split("=");
                     configEjecucion.setPathDescargasUsuario(parts.length > 1 ? parts[1] : default_);

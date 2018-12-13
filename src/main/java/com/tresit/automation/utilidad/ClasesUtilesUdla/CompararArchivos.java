@@ -39,11 +39,11 @@ public class CompararArchivos {
         //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantes_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantesDetalle_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
 
-
+/*
         File f = new File("C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_52\\Descargas\\Resultado_2018-12-13 09_52_30.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         File p = new File("C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\Resultado (20).xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         comparaListasResultado(f,p,"C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_52\\Descargas");
-
+*/
         //comparaListasResultado(f,p,"C:\\Automatizacion\\ATC_TEST\\Descargas");
         //comparaListasResultadoCupo(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
         //comparaListasResultadoAlumnoFaltantesDetalle(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
@@ -104,7 +104,9 @@ public class CompararArchivos {
                 if(!(lista1.get(i).getNombreConvenio().equals(lista2.get(i).getNombreConvenio()))){
                     t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreConvenio Valores Distintos" , rutaArchivoComparacion);
                 }
-                // FALTA CAMPO CONVENIO
+                if(!(lista1.get(i).getConvenio().equals(lista2.get(i).getConvenio()))){
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Convenio Valores Distintos" , rutaArchivoComparacion);
+                }
                 if(!(lista1.get(i).getESTABLECIMIENTO().equals(lista2.get(i).getESTABLECIMIENTO()))){
                     t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo ESTABLECIMIENTO Valores Distintos" , rutaArchivoComparacion);
                 }
@@ -125,6 +127,7 @@ public class CompararArchivos {
                 }
             }
             // Recorrer la lista.. Luego los campos de la lista
+            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
         }catch(Exception l){
@@ -201,6 +204,7 @@ public class CompararArchivos {
 
             }
             // Recorrer la lista.. Luego los campos de la lista
+            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
         }catch(Exception l){
@@ -261,6 +265,7 @@ public class CompararArchivos {
 
             }
             // Recorrer la lista.. Luego los campos de la lista
+            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
         }catch(Exception l){
@@ -300,6 +305,7 @@ public class CompararArchivos {
 
             }
             // Recorrer la lista.. Luego los campos de la lista
+            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
         }catch(Exception l){
@@ -342,6 +348,7 @@ public class CompararArchivos {
 
             }
             // Recorrer la lista.. Luego los campos de la lista
+            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
         }catch(Exception l){

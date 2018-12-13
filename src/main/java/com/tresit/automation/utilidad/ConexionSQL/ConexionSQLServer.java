@@ -61,6 +61,27 @@ public class ConexionSQLServer {
         return conn;
     }
 
+    public static Connection abrirConexionAutomatizacionTest(){
+
+        String connectionUrlQA = "jdbc:sqlserver://10.128.216.61:1435;database=AutomatizacionTest" ;
+        String USERQA = "sa";
+        String PASSQA = "Calidad3it";
+        Connection conn = null;
+
+        try{
+            System.out.println("Conectando a base de datos... AutomatizacionTest");
+            conn = DriverManager.getConnection(connectionUrlQA,USERQA,PASSQA);
+
+        }catch(SQLException se){
+            System.out.println("Error SQLException: " + se.getMessage());
+            se.printStackTrace();
+        }catch(Exception e){
+            System.out.println("Error Exception: " + e.getMessage());
+            e.printStackTrace();
+        }
+        return conn;
+    }
+
     public static void EjecutarQuery(Connection con, String sql){
 
         Statement stmt = null;

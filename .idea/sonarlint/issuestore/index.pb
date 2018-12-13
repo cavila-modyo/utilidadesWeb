@@ -13,3 +13,11 @@ Psrc/main/java/com/tresit/automation/utilidad/Elementos_Sitios/ElementosUdla.jav
 Ysrc/main/java/com/tresit/automation/utilidad/BD_Automatizacion/Tablas/EjecucionesLog.java,3\f\3f68c8c37c6d1704acf2d15db5d2089506de2886
 t
 Dsrc/main/java/com/tresit/automation/utilidad/Herramientas/Texto.java,0\4\04574abef1c8c11ff1a43981946d0e39c878740d
+o
+?src/main/java/com/tresit/automation/utilidad/zMainUtilidad.java,b\0\b0940a5ee1c704ff12f969425c5ea712800db065
+…
+Usrc/main/java/com/tresit/automation/utilidad/Herramientas/ConfiguracionEjecucion.java,d\f\dff05a3def65311fd5faa9b314a334ec96f736fa
+…
+Usrc/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/ResultadoInternado.java,2\8\2857b1cb324a57283ea1659b6baac7a50cb12d7c
+ƒ
+Ssrc/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/CompararArchivos.java,a\1\a15dda7413b87c3731fedad58ffe479d6a3a0818
