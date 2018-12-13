@@ -85,7 +85,7 @@ public class Texto {
         configEjecucion = new ConfiguracionEjecucion();
         String default_ = "";
         while ((cadena = b.readLine()) != null) {
-            System.out.println("Valor de Cadena: " + cadena);
+            //System.out.println("Valor de Cadena: " + cadena);
             if (!cadena.equals(null) || !cadena.equals("")) {
                 if (cadena.contains("Carpeta")) {
                     String[] parts = cadena.trim().split("=");
@@ -173,7 +173,7 @@ public class Texto {
         }
     }
 
-
+/*
     public static void main(String[] args) {
         try {
             EjecucionesLog log1 = new EjecucionesLog();
@@ -187,5 +187,6 @@ public class Texto {
             System.out.println("Error: " + p.getMessage());
         }
     }
+    */
 
 }
