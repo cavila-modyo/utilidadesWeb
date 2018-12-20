@@ -75,7 +75,7 @@ public class Excel {
                                     if (rowNum == 0) {
                                         System.out.println("Valor Encabezado: " + hssfRow.getCell(i));
                                     }else{
-                                        System.out.println("Valor Fila: " + hssfRow.getCell(i));
+                                        System.out.println("Valor Fila[" + i + "] : " + hssfRow.getCell(i));
                                     }
                                 }
                             }
@@ -108,7 +108,7 @@ public class Excel {
                                     if (rowNum == 0) {
                                         System.out.println("Valor Encabezado: " + hssfRow.getCell(i));
                                     }else{
-                                        System.out.println("Valor Fila: " + hssfRow.getCell(i));
+                                        System.out.println("Valor Fila[" + i + "] : " + hssfRow.getCell(i));
                                     }
                                 }
                             }

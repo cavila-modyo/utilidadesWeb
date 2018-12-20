@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 
 public class WebSelector {
@@ -49,11 +51,12 @@ public class WebSelector {
     public static WebDriver MozilaBrowser(String url){
 
         // Predefinir carpeta de descarga  (SERA UNA MEJORA)
-        //FirefoxProfile profile = new FirefoxProfile();
+        FirefoxProfile profile = new FirefoxProfile();
         //profile.setPreference("browser.download.folderList", 2);
         //profile.setPreference("browser.download.dir", carpetaDescarga);   // System.getProperty("user.dir")
-        //FirefoxOptions option = new FirefoxOptions();
+        FirefoxOptions option = new FirefoxOptions();
         //option.setProfile(profile);
+
 
         System.setProperty("webdriver.gecko.driver", "C://Automatizacion//WebDriver//geckodriver.exe");
         FirefoxDriver driver = new FirefoxDriver();
@@ -68,6 +71,5 @@ public class WebSelector {
         //MozilaBrowser("http://qa.cajachile.3it.corp");
     }
 */
-
 
 }

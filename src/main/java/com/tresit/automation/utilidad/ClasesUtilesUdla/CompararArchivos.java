@@ -39,11 +39,10 @@ public class CompararArchivos {
         //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantes_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantesDetalle_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
 
-/*
-        File f = new File("C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_52\\Descargas\\Resultado_2018-12-13 09_52_30.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        File p = new File("C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\Resultado (20).xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        comparaListasResultado(f,p,"C:\\Automatizacion\\UDSGP-255\\MTC_US_UDSGP_05000\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_52\\Descargas");
-*/
+        File f = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0030_chrome\\Resultado_2018-12-12 02_28_17.xlsx");
+        File p = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0030_validar_regla_no_asignar_en_ID_111\\Descargas\\Resultado_2018-12-20 09_41_43.xlsx");
+        comparaListasResultado(f,p,"C:\\Users\\3it\\Desktop\\Ejecucion Servidor");
+
         //comparaListasResultado(f,p,"C:\\Automatizacion\\ATC_TEST\\Descargas");
         //comparaListasResultadoCupo(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
         //comparaListasResultadoAlumnoFaltantesDetalle(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
@@ -72,64 +71,68 @@ public class CompararArchivos {
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 1: " + cantidadFilasLista1, rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 2: " + cantidadFilasLista2, rutaArchivoComparacion);
 
-            // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
-            for(int i=0; i<=(cantidadFilasLista1-1); i++){
-                if(!(lista1.get(i).getSede().equals(lista2.get(i).getSede()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Sede Valores Distintos" , rutaArchivoComparacion);
+            if (cantidadFilasLista1 == 0 || cantidadFilasLista2 == 0){
+                t.ArchivoResultadoComparacion("Cantidad de Registros es cero para uno de los archivos a comparar.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
+            }else {
+                // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
+                for (int i = 0; i <= (cantidadFilasLista1 - 1); i++) {
+                    if (!(lista1.get(i).getSede().equals(lista2.get(i).getSede()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Sede Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreCarrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCarrera().equals(lista2.get(i).getCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Carrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRut().equals(lista2.get(i).getRut()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Rut Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreCompleto().equals(lista2.get(i).getNombreCompleto()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreCompleto Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getPeriodo().equals(lista2.get(i).getPeriodo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Periodo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoAsignatura Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNRC().equals(lista2.get(i).getNRC()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NRC Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombrePractica().equals(lista2.get(i).getNombrePractica()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombrePractica Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreConvenio().equals(lista2.get(i).getNombreConvenio()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreConvenio Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getConvenio().equals(lista2.get(i).getConvenio()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Convenio Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getESTABLECIMIENTO().equals(lista2.get(i).getESTABLECIMIENTO()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo ESTABLECIMIENTO Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getEstablecimiento_int().equals(lista2.get(i).getEstablecimiento_int()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Establecimiento_int Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getFechaDeInicio().equals(lista2.get(i).getFechaDeInicio()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaDeInicio Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getFechaDeTermino().equals(lista2.get(i).getFechaDeTermino()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaDeTermino Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRutTutor().equals(lista2.get(i).getRutTutor()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RutTutor Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getHORARIO().equals(lista2.get(i).getHORARIO()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo HORARIO Valores Distintos", rutaArchivoComparacion);
+                    }
                 }
-                if(!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreCarrera Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getCarrera().equals(lista2.get(i).getCarrera()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Carrera Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getRut().equals(lista2.get(i).getRut()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Rut Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getNombreCompleto().equals(lista2.get(i).getNombreCompleto()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreCompleto Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getPeriodo().equals(lista2.get(i).getPeriodo()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Periodo Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoAsignatura Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getNRC().equals(lista2.get(i).getNRC()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NRC Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getNombrePractica().equals(lista2.get(i).getNombrePractica()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombrePractica Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getNombreConvenio().equals(lista2.get(i).getNombreConvenio()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreConvenio Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getConvenio().equals(lista2.get(i).getConvenio()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Convenio Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getESTABLECIMIENTO().equals(lista2.get(i).getESTABLECIMIENTO()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo ESTABLECIMIENTO Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getEstablecimiento_int().equals(lista2.get(i).getEstablecimiento_int()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Establecimiento_int Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getFechaDeInicio().equals(lista2.get(i).getFechaDeInicio()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaDeInicio Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getFechaDeTermino().equals(lista2.get(i).getFechaDeTermino()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaDeTermino Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getRutTutor().equals(lista2.get(i).getRutTutor()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RutTutor Valores Distintos" , rutaArchivoComparacion);
-                }
-                if(!(lista1.get(i).getHORARIO().equals(lista2.get(i).getHORARIO()))){
-                    t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo HORARIO Valores Distintos" , rutaArchivoComparacion);
-                }
+                // Recorrer la lista.. Luego los campos de la lista
+                t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
             }
-            // Recorrer la lista.. Luego los campos de la lista
-            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
-            t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
-
         }catch(Exception l){
             System.out.println("Error: " + l.getMessage());
             t.ArchivoResultadoComparacion("Error: " + l.getMessage(), rutaArchivoComparacion);
@@ -141,7 +144,7 @@ public class CompararArchivos {
     public static void comparaListasResultadoCupo(File f, File p, String rutaArchivoComparacion){
 
         Texto t = new Texto();
-        try{
+        try {
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Archivo_1: " + f.getPath(), rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Archivo_2: " + p.getPath(), rutaArchivoComparacion);
@@ -154,59 +157,149 @@ public class CompararArchivos {
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 1: " + cantidadFilasLista1, rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 2: " + cantidadFilasLista2, rutaArchivoComparacion);
 
+            if (cantidadFilasLista1 == 0 || cantidadFilasLista2 == 0) {
+                t.ArchivoResultadoComparacion("Cantidad de Registros es cero para uno de los archivos a comparar.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
+            } else {
+
             // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
-            for(int i=0; i<=(cantidadFilasLista1-1); i++){
+            for (int i = 0; i <= (cantidadFilasLista1 - 1); i++) {
 
-                if(!(lista1.get(i).getCodigoCarrera().equals(lista2.get(i).getCodigoCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoCarrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getIdCarrera().equals(lista2.get(i).getIdCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo IdCarrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoAsignatura Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getActividad().equals(lista2.get(i).getActividad()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Actividad Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getEstandarGrupoEstudiante().equals(lista2.get(i).getEstandarGrupoEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo EstandarGrupoEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getConvenio().equals(lista2.get(i).getConvenio()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Convenio Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCodigoConvenio().equals(lista2.get(i).getCodigoConvenio()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoConvenio Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getIdConvenio().equals(lista2.get(i).getIdConvenio()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo IdConvenio Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getPrioridad().equals(lista2.get(i).getPrioridad()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Prioridad Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getPago().equals(lista2.get(i).getPago()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Pago Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getEstablecimiento().equals(lista2.get(i).getEstablecimiento()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Establecimiento Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getIdEstablecimientoServicio().equals(lista2.get(i).getIdEstablecimientoServicio()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo IdEstablecimientoServicio Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCritico().equals(lista2.get(i).getCritico()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Critico Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getComuna().equals(lista2.get(i).getComuna()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Comuna Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getHorario().equals(lista2.get(i).getHorario()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Horario Valores Distintos" , rutaArchivoComparacion);}
+                if (!(lista1.get(i).getCodigoCarrera().equals(lista2.get(i).getCodigoCarrera()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoCarrera Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getIdCarrera().equals(lista2.get(i).getIdCarrera()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo IdCarrera Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoAsignatura Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getActividad().equals(lista2.get(i).getActividad()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Actividad Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getEstandarGrupoEstudiante().equals(lista2.get(i).getEstandarGrupoEstudiante()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo EstandarGrupoEstudiante Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getConvenio().equals(lista2.get(i).getConvenio()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Convenio Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCodigoConvenio().equals(lista2.get(i).getCodigoConvenio()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoConvenio Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getIdConvenio().equals(lista2.get(i).getIdConvenio()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo IdConvenio Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getPrioridad().equals(lista2.get(i).getPrioridad()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Prioridad Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getPago().equals(lista2.get(i).getPago()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Pago Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getEstablecimiento().equals(lista2.get(i).getEstablecimiento()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Establecimiento Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getIdEstablecimientoServicio().equals(lista2.get(i).getIdEstablecimientoServicio()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo IdEstablecimientoServicio Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCritico().equals(lista2.get(i).getCritico()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Critico Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getComuna().equals(lista2.get(i).getComuna()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Comuna Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getHorario().equals(lista2.get(i).getHorario()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Horario Valores Distintos", rutaArchivoComparacion);
+                }
 
-                if(!(lista1.get(i).getDocente().equals(lista2.get(i).getDocente()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Docente Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRutDocente().equals(lista2.get(i).getRutDocente()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RutDocente Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getTipoDocente().equals(lista2.get(i).getTipoDocente()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo TipoDocente Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getFechaRotacion1().equals(lista2.get(i).getFechaRotacion1()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaRotacion1 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCuposRotacion1().equals(lista2.get(i).getCuposRotacion1()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CuposRotacion1 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMinimoCuposRotacion1().equals(lista2.get(i).getMinimoCuposRotacion1()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MinimoCuposRotacion1 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getFechaRotacion2().equals(lista2.get(i).getFechaRotacion2()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaRotacion2 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCuposRotacion2().equals(lista2.get(i).getCuposRotacion2()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CuposRotacion2 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMinimoCuposRotacion2().equals(lista2.get(i).getMinimoCuposRotacion2()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MinimoCuposRotacion2 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getFechaRotacion3().equals(lista2.get(i).getFechaRotacion3()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaRotacion3 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCuposRotacion3().equals(lista2.get(i).getCuposRotacion3()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CuposRotacion3 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMinimoCuposRotacion3().equals(lista2.get(i).getMinimoCuposRotacion3()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MinimoCuposRotacion3 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getFechaRotacion4().equals(lista2.get(i).getFechaRotacion4()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaRotacion4 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCuposRotacion4().equals(lista2.get(i).getCuposRotacion4()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CuposRotacion4 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMinimoCuposRotacion4().equals(lista2.get(i).getMinimoCuposRotacion4()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MinimoCuposRotacion4 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getFechaRotacion5().equals(lista2.get(i).getFechaRotacion5()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo FechaRotacion5 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCuposRotacion5().equals(lista2.get(i).getCuposRotacion5()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CuposRotacion5 Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMinimoCuposRotacion5().equals(lista2.get(i).getMinimoCuposRotacion5()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MinimoCuposRotacion5 Valores Distintos" , rutaArchivoComparacion);}
+                if (!(lista1.get(i).getDocente().equals(lista2.get(i).getDocente()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Docente Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getRutDocente().equals(lista2.get(i).getRutDocente()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RutDocente Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getTipoDocente().equals(lista2.get(i).getTipoDocente()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo TipoDocente Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getFechaRotacion1().equals(lista2.get(i).getFechaRotacion1()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaRotacion1 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCuposRotacion1().equals(lista2.get(i).getCuposRotacion1()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CuposRotacion1 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getMinimoCuposRotacion1().equals(lista2.get(i).getMinimoCuposRotacion1()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MinimoCuposRotacion1 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getFechaRotacion2().equals(lista2.get(i).getFechaRotacion2()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaRotacion2 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCuposRotacion2().equals(lista2.get(i).getCuposRotacion2()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CuposRotacion2 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getMinimoCuposRotacion2().equals(lista2.get(i).getMinimoCuposRotacion2()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MinimoCuposRotacion2 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getFechaRotacion3().equals(lista2.get(i).getFechaRotacion3()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaRotacion3 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCuposRotacion3().equals(lista2.get(i).getCuposRotacion3()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CuposRotacion3 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getMinimoCuposRotacion3().equals(lista2.get(i).getMinimoCuposRotacion3()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MinimoCuposRotacion3 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getFechaRotacion4().equals(lista2.get(i).getFechaRotacion4()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaRotacion4 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCuposRotacion4().equals(lista2.get(i).getCuposRotacion4()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CuposRotacion4 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getMinimoCuposRotacion4().equals(lista2.get(i).getMinimoCuposRotacion4()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MinimoCuposRotacion4 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getFechaRotacion5().equals(lista2.get(i).getFechaRotacion5()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo FechaRotacion5 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCuposRotacion5().equals(lista2.get(i).getCuposRotacion5()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CuposRotacion5 Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getMinimoCuposRotacion5().equals(lista2.get(i).getMinimoCuposRotacion5()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MinimoCuposRotacion5 Valores Distintos", rutaArchivoComparacion);
+                }
 
-                if(!(lista1.get(i).getVacunaInfluenza().equals(lista2.get(i).getVacunaInfluenza()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo VacunaInfluenza Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getVacunaHepatitisB().equals(lista2.get(i).getVacunaHepatitisB()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo VacunaHepatitisB Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getSerologiaVaricela().equals(lista2.get(i).getSerologiaVaricela()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo SerologiaVaricela Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCoprocultivo().equals(lista2.get(i).getCoprocultivo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Coprocultivo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getExamenParasitologico().equals(lista2.get(i).getExamenParasitologico()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo ExamenParasitologico Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCultivoNasofaringeo().equals(lista2.get(i).getCultivoNasofaringeo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CultivoNasofaringeo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCertificadoAntecedentes().equals(lista2.get(i).getCertificadoAntecedentes()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CertificadoAntecedentes Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCertificadoInhabilidades().equals(lista2.get(i).getCertificadoInhabilidades()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CertificadoInhabilidades Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getAceptaEmbarazadas().equals(lista2.get(i).getAceptaEmbarazadas()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo AceptaEmbarazadas Valores Distintos" , rutaArchivoComparacion);}
+                if (!(lista1.get(i).getVacunaInfluenza().equals(lista2.get(i).getVacunaInfluenza()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo VacunaInfluenza Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getVacunaHepatitisB().equals(lista2.get(i).getVacunaHepatitisB()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo VacunaHepatitisB Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getSerologiaVaricela().equals(lista2.get(i).getSerologiaVaricela()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo SerologiaVaricela Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCoprocultivo().equals(lista2.get(i).getCoprocultivo()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Coprocultivo Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getExamenParasitologico().equals(lista2.get(i).getExamenParasitologico()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo ExamenParasitologico Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCultivoNasofaringeo().equals(lista2.get(i).getCultivoNasofaringeo()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CultivoNasofaringeo Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCertificadoAntecedentes().equals(lista2.get(i).getCertificadoAntecedentes()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CertificadoAntecedentes Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getCertificadoInhabilidades().equals(lista2.get(i).getCertificadoInhabilidades()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CertificadoInhabilidades Valores Distintos", rutaArchivoComparacion);
+                }
+                if (!(lista1.get(i).getAceptaEmbarazadas().equals(lista2.get(i).getAceptaEmbarazadas()))) {
+                    t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo AceptaEmbarazadas Valores Distintos", rutaArchivoComparacion);
+                }
 
             }
             // Recorrer la lista.. Luego los campos de la lista
             t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
 
+            }
         }catch(Exception l){
             System.out.println("Error: " + l.getMessage());
             t.ArchivoResultadoComparacion("Error: " + l.getMessage(), rutaArchivoComparacion);
@@ -231,43 +324,104 @@ public class CompararArchivos {
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 1: " + cantidadFilasLista1, rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 2: " + cantidadFilasLista2, rutaArchivoComparacion);
 
-            // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
-            for(int i=0; i<=(cantidadFilasLista1-1); i++){
+            if (cantidadFilasLista1 == 0 || cantidadFilasLista2 == 0) {
+                t.ArchivoResultadoComparacion("Cantidad de Registros es cero para uno de los archivos a comparar.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
+            } else {
 
-                if(!(lista1.get(i).getCodigoCampus().equals(lista2.get(i).getCodigoCampus()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoCampus Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreCarrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getIdCarrera().equals(lista2.get(i).getIdCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo IdCarrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNrc().equals(lista2.get(i).getNrc()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Nrc Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RutEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCelularEstudiante().equals(lista2.get(i).getCelularEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CelularEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMailEstudiante().equals(lista2.get(i).getMailEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo MailEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getComunaEstudiante().equals(lista2.get(i).getComunaEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo ComunaEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getHorarioLibre().equals(lista2.get(i).getHorarioLibre()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo HorarioLibre Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getHorarioEstudio().equals(lista2.get(i).getHorarioEstudio()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo HorarioEstudio Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getEmbarazo().equals(lista2.get(i).getEmbarazo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Embarazo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getVacunaInfluenza().equals(lista2.get(i).getVacunaInfluenza()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo VacunaInfluenza Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getVacunaHepatitisB().equals(lista2.get(i).getVacunaHepatitisB()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo VacunaHepatitisB Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getSerologiaVaricela().equals(lista2.get(i).getSerologiaVaricela()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo SerologiaVaricela Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCoprocultivo().equals(lista2.get(i).getCoprocultivo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Coprocultivo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getParasitologo().equals(lista2.get(i).getParasitologo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Parasitologo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCultivoNasofaringeo().equals(lista2.get(i).getCultivoNasofaringeo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CultivoNasofaringeo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCertificadoAntecedentes().equals(lista2.get(i).getCertificadoAntecedentes()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CertificadoAntecedentes Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCertificadoInhabilidades().equals(lista2.get(i).getCertificadoInhabilidades()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CertificadoInhabilidades Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNotaCono().equals(lista2.get(i).getNotaCono()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NotaCono Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getAreaPreferenciaADPED().equals(lista2.get(i).getAreaPreferenciaADPED()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo AreaPreferenciaADPED Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getPeriodo().equals(lista2.get(i).getPeriodo()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Periodo Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoAsignatura Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getActividades().equals(lista2.get(i).getActividades()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Actividades Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRotativasCursar().equals(lista2.get(i).getRotativasCursar()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RotativasCursar Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getAsignarEn().equals(lista2.get(i).getAsignarEn()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo AsignarEn Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNoAsignarEn().equals(lista2.get(i).getNoAsignarEn()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NoAsignarEn Valores Distintos" , rutaArchivoComparacion);}
+                // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
+                for (int i = 0; i <= (cantidadFilasLista1 - 1); i++) {
 
+                    if (!(lista1.get(i).getCodigoCampus().equals(lista2.get(i).getCodigoCampus()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoCampus Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreCarrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getIdCarrera().equals(lista2.get(i).getIdCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo IdCarrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNrc().equals(lista2.get(i).getNrc()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Nrc Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RutEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCelularEstudiante().equals(lista2.get(i).getCelularEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CelularEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getMailEstudiante().equals(lista2.get(i).getMailEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo MailEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getComunaEstudiante().equals(lista2.get(i).getComunaEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo ComunaEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getHorarioLibre().equals(lista2.get(i).getHorarioLibre()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo HorarioLibre Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getHorarioEstudio().equals(lista2.get(i).getHorarioEstudio()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo HorarioEstudio Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getEmbarazo().equals(lista2.get(i).getEmbarazo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Embarazo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getVacunaInfluenza().equals(lista2.get(i).getVacunaInfluenza()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo VacunaInfluenza Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getVacunaHepatitisB().equals(lista2.get(i).getVacunaHepatitisB()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo VacunaHepatitisB Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getSerologiaVaricela().equals(lista2.get(i).getSerologiaVaricela()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo SerologiaVaricela Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCoprocultivo().equals(lista2.get(i).getCoprocultivo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Coprocultivo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getParasitologo().equals(lista2.get(i).getParasitologo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Parasitologo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCultivoNasofaringeo().equals(lista2.get(i).getCultivoNasofaringeo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CultivoNasofaringeo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCertificadoAntecedentes().equals(lista2.get(i).getCertificadoAntecedentes()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CertificadoAntecedentes Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCertificadoInhabilidades().equals(lista2.get(i).getCertificadoInhabilidades()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CertificadoInhabilidades Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNotaCono().equals(lista2.get(i).getNotaCono()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NotaCono Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getAreaPreferenciaADPED().equals(lista2.get(i).getAreaPreferenciaADPED()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo AreaPreferenciaADPED Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getPeriodo().equals(lista2.get(i).getPeriodo()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Periodo Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoAsignatura Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getActividades().equals(lista2.get(i).getActividades()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Actividades Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRotativasCursar().equals(lista2.get(i).getRotativasCursar()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RotativasCursar Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getAsignarEn().equals(lista2.get(i).getAsignarEn()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo AsignarEn Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNoAsignarEn().equals(lista2.get(i).getNoAsignarEn()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NoAsignarEn Valores Distintos", rutaArchivoComparacion);
+                    }
+
+                }
+                // Recorrer la lista.. Luego los campos de la lista
+                t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
             }
-            // Recorrer la lista.. Luego los campos de la lista
-            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
-            t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
-
         }catch(Exception l){
             System.out.println("Error: " + l.getMessage());
             t.ArchivoResultadoComparacion("Error: " + l.getMessage(), rutaArchivoComparacion);
@@ -292,22 +446,40 @@ public class CompararArchivos {
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 1: " + cantidadFilasLista1, rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 2: " + cantidadFilasLista2, rutaArchivoComparacion);
 
-            // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
-            for(int i=0; i<=(cantidadFilasLista1-1); i++){
+            if (cantidadFilasLista1 == 0 || cantidadFilasLista2 == 0) {
+                t.ArchivoResultadoComparacion("Cantidad de Registros es cero para uno de los archivos a comparar.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
+            } else {
+                // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
+                for (int i = 0; i <= (cantidadFilasLista1 - 1); i++) {
 
-                if(!(lista1.get(i).getSede().equals(lista2.get(i).getSede()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Sede Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreCarrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RutEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo CodigoAsignatura Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNumeroRotativasAsignatura().equals(lista2.get(i).getNumeroRotativasAsignatura()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NumeroRotativasAsignatura Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNumerRotativasAsignadas().equals(lista2.get(i).getNumerRotativasAsignadas()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NumerRotativasAsignadas Valores Distintos" , rutaArchivoComparacion);}
+                    if (!(lista1.get(i).getSede().equals(lista2.get(i).getSede()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Sede Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreCarrera().equals(lista2.get(i).getNombreCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreCarrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RutEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCodigoAsignatura().equals(lista2.get(i).getCodigoAsignatura()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo CodigoAsignatura Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNumeroRotativasAsignatura().equals(lista2.get(i).getNumeroRotativasAsignatura()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NumeroRotativasAsignatura Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNumerRotativasAsignadas().equals(lista2.get(i).getNumerRotativasAsignadas()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NumerRotativasAsignadas Valores Distintos", rutaArchivoComparacion);
+                    }
 
+                }
+                // Recorrer la lista.. Luego los campos de la lista
+                t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
             }
-            // Recorrer la lista.. Luego los campos de la lista
-            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
-            t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
-
         }catch(Exception l){
             System.out.println("Error: " + l.getMessage());
             t.ArchivoResultadoComparacion("Error: " + l.getMessage(), rutaArchivoComparacion);
@@ -332,25 +504,49 @@ public class CompararArchivos {
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 1: " + cantidadFilasLista1, rutaArchivoComparacion);
             t.ArchivoResultadoComparacion("Cantidad de Registros Archivo 2: " + cantidadFilasLista2, rutaArchivoComparacion);
 
-            // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
-            for(int i=0; i<=(cantidadFilasLista1-1); i++){
+            if (cantidadFilasLista1 == 0 || cantidadFilasLista2 == 0) {
+                t.ArchivoResultadoComparacion("Cantidad de Registros es cero para uno de los archivos a comparar.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
+            } else {
+                // ARCHIVOS COMPARADOS (La clase tiene 17 campos)
+                for (int i = 0; i <= (cantidadFilasLista1 - 1); i++) {
 
-                if(!(lista1.get(i).getCampus().equals(lista2.get(i).getCampus()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Campus Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getCarrera().equals(lista2.get(i).getCarrera()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Carrera Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getAsignatura().equals(lista2.get(i).getAsignatura()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Asignatura Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo RutEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo NombreEstudiante Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getIdEstablecimiento().equals(lista2.get(i).getIdEstablecimiento()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo IdEstablecimiento Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getEstablecimiento().equals(lista2.get(i).getEstablecimiento()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Establecimiento Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getActividad().equals(lista2.get(i).getActividad()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Actividad Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getRotativa().equals(lista2.get(i).getRotativa()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Rotativa Valores Distintos" , rutaArchivoComparacion);}
-                if(!(lista1.get(i).getMensaje().equals(lista2.get(i).getMensaje()))){t.ArchivoResultadoComparacion("FilaExcel : " + (i+2) + ", Campo Mensaje Valores Distintos" , rutaArchivoComparacion);}
+                    if (!(lista1.get(i).getCampus().equals(lista2.get(i).getCampus()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Campus Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getCarrera().equals(lista2.get(i).getCarrera()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Carrera Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getAsignatura().equals(lista2.get(i).getAsignatura()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Asignatura Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRutEstudiante().equals(lista2.get(i).getRutEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo RutEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getNombreEstudiante().equals(lista2.get(i).getNombreEstudiante()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo NombreEstudiante Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getIdEstablecimiento().equals(lista2.get(i).getIdEstablecimiento()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo IdEstablecimiento Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getEstablecimiento().equals(lista2.get(i).getEstablecimiento()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Establecimiento Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getActividad().equals(lista2.get(i).getActividad()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Actividad Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getRotativa().equals(lista2.get(i).getRotativa()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Rotativa Valores Distintos", rutaArchivoComparacion);
+                    }
+                    if (!(lista1.get(i).getMensaje().equals(lista2.get(i).getMensaje()))) {
+                        t.ArchivoResultadoComparacion("FilaExcel : " + (i + 2) + ", Campo Mensaje Valores Distintos", rutaArchivoComparacion);
+                    }
 
+                }
+                // Recorrer la lista.. Luego los campos de la lista
+                t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
+                t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
             }
-            // Recorrer la lista.. Luego los campos de la lista
-            t.ArchivoResultadoComparacion("Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos.", rutaArchivoComparacion);
-            t.ArchivoResultadoComparacion("********************************************", rutaArchivoComparacion);
-
         }catch(Exception l){
             System.out.println("Error: " + l.getMessage());
             t.ArchivoResultadoComparacion("Error: " + l.getMessage(), rutaArchivoComparacion);

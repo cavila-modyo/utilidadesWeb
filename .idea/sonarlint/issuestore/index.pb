@@ -21,3 +21,9 @@ Usrc/main/java/com/tresit/automation/utilidad/Herramientas/ConfiguracionEjecucio
 Usrc/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/ResultadoInternado.java,2\8\2857b1cb324a57283ea1659b6baac7a50cb12d7c
 ƒ
 Ssrc/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/CompararArchivos.java,a\1\a15dda7413b87c3731fedad58ffe479d6a3a0818
+{
+Ksrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionMySQL.java,8\b\8bf3bc652ed8f2c3190d20cbe3d1b25df8d02a1a
+
+Osrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionSQLServer.java,0\3\036fb7239a5f1f1ae037b743ea15e30a4d599ec2
+ˆ
+Xsrc/main/java/com/tresit/automation/utilidad/Elementos_Sitios/ElementosUdla_Firefox.java,c\e\ceadef22d87f34234427bb0eadc346c1123e2833
