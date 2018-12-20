@@ -6,7 +6,7 @@
 
     <groupId>com.tresit</groupId>
     <artifactId>com.tresit.utilidad</artifactId>
-    <version>1.3-SNAPSHOT</version>
+    <version>1.4-SNAPSHOT</version>
 
     <!--Se agrega packgign para generar el jar desde la funcion package del maven project-->
     <packaging>jar</packaging>
