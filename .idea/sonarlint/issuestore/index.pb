@@ -27,3 +27,5 @@ Ksrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionMySQL.java,8\
 Osrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionSQLServer.java,0\3\036fb7239a5f1f1ae037b743ea15e30a4d599ec2
 à
 Xsrc/main/java/com/tresit/automation/utilidad/Elementos_Sitios/ElementosUdla_Firefox.java,c\e\ceadef22d87f34234427bb0eadc346c1123e2833
+è
+_src/main/java/com/tresit/automation/utilidad/BD_Automatizacion/Procedures/InsertaEjecucion.java,9\7\9789b5785a66f66fbbd5e64a6891f09eb13b7b16

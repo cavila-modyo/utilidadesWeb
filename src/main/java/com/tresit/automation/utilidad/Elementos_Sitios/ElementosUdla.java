@@ -37,7 +37,9 @@ public class ElementosUdla {
     private static String Labelcupos = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/angular-file-uploader[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/label[1]";
     private static String LabelPreliminar = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/angular-file-uploader[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/label[1]";
     private static String popupCupo = "//angular-file-uploader[@id=\"Cupos\"]/div/input";
+    private static String popupCupo2 = "//angular-file-uploader[@id=\"Cupos\"]/*/input";
     private static String popupPreliminar = "//angular-file-uploader[@id=\"Alumnos\"]/div/input";
+    private static String popupPreliminar2 = "//angular-file-uploader[@id=\"Alumnos\"]/*/input";
     private static String EncabezadoPaso1 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[1]/mat-step-header[1]/div[3]/h2[1]";
     private static String EncabezadoPaso2 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/mat-step-header[1]/div[3]/h2[1]";
     private static String EncabezadoPaso3 = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/mat-step-header[1]/div[3]/h2[1]";
@@ -49,7 +51,9 @@ public class ElementosUdla {
     private static String descargaResultado_AlumnosFaltanteDetalle = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[3]/div[1]/div[1]/div[1]/div[1]/button[6]/span[1]";
 
     private static String label_DocumentoCupoSubido = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/span[1]";
+    private static String label_DocumentoCupoSubido2 = "//*[@id=\"cdk-step-content-0-1\"]/div/div/div[1]/div[1]/div[2]/div/div/span";
     private static String label_DocumentoPreliminarSubido = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/span[1]";
+    private static String label_DocumentoPreliminarSubido2 = "//*[@id=\"cdk-step-content-0-1\"]/div/div/div[1]/div[2]/div[3]/div/div/span";
     private static String btn_errorCupoDescarga = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]";
     private static String btn_errorPreliminarDescarga = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]";
 
@@ -226,4 +230,35 @@ public class ElementosUdla {
 
     public static String getDescargaResultado_AlumnosFaltanteDetalle() {return descargaResultado_AlumnosFaltanteDetalle;}
 
+    public static String getLabel_DocumentoCupoSubido2() {
+        return label_DocumentoCupoSubido2;
+    }
+
+    public static void setLabel_DocumentoCupoSubido2(String label_DocumentoCupoSubido2) {
+        ElementosUdla.label_DocumentoCupoSubido2 = label_DocumentoCupoSubido2;
+    }
+
+    public static String getLabel_DocumentoPreliminarSubido2() {
+        return label_DocumentoPreliminarSubido2;
+    }
+
+    public static void setLabel_DocumentoPreliminarSubido2(String label_DocumentoPreliminarSubido2) {
+        ElementosUdla.label_DocumentoPreliminarSubido2 = label_DocumentoPreliminarSubido2;
+    }
+
+    public static String getPopupCupo2() {
+        return popupCupo2;
+    }
+
+    public static void setPopupCupo2(String popupCupo2) {
+        ElementosUdla.popupCupo2 = popupCupo2;
+    }
+
+    public static String getPopupPreliminar2() {
+        return popupPreliminar2;
+    }
+
+    public static void setPopupPreliminar2(String popupPreliminar2) {
+        ElementosUdla.popupPreliminar2 = popupPreliminar2;
+    }
 }

@@ -1,38 +1,38 @@
 
-gsquid:S00100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãı¬ú
-nsquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÅÇÜüÿÿÿÿ
 ?squid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+nsquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÅÇÜüÿÿÿÿ
 esquid:S00100U"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÈŠw
-:squid:S1148M"#Use a logger to log this exception.(¸ß¹
-Fsquid:S00108q")Either remove or fill this block of code.(„õ Öşÿÿÿÿ
-Tsquid:S2589‘"7Remove this expression which always evaluates to "true"(êÑßüÿÿÿÿ
-isquid:S1192%"RDefine a constant instead of duplicating this literal "Error Exception: " 3 times.(Ç¿œ†
-isquid:S00117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌàË‚
-isquid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌàË‚
-ksquid:S00100w"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¦©ûûÿÿÿÿ
-Gsquid:S00108’")Either remove or fill this block of code.(„õ Öşÿÿÿÿ
-nsquid:S00117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÊ™˜ÿÿÿÿÿ
-:squid:S1148j"#Use a logger to log this exception.(¸ß¹
-:squid:S1148#"#Use a logger to log this exception.(¸ß¹
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øó¬­
-lsquid:S3008"PRename this field "Error" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÎìÜÿÿÿÿÿ
-:squid:S11488"#Use a logger to log this exception.(¸ß¹
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çµí‘
-Qsquid:S1118":Add a private constructor to hide the implicit public one.(œ€çß
-wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(——÷Íùÿÿÿÿ
+@squid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 ?squid:S1148;"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-gsquid:CommentedOutCodeLinev"<This block of commented-out lines of code should be removed.(Ê€âšúÿÿÿÿ
-gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(©ö÷ÿÿÿÿÿ
+isquid:S00117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌàË‚
 lsquid:S1192""UDefine a constant instead of duplicating this literal "Error SQLException: " 3 times.(Ñ†ª¾
-Ysquid:S00107w"<Method has 8 parameters, which is greater than 7 authorized.(¬¦©ûûÿÿÿÿ
+lsquid:S3008"PRename this field "Error" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÎìÜÿÿÿÿÿ
+?squid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+:squid:S1148j"#Use a logger to log this exception.(¸ß¹
+gsquid:S00100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãı¬ú
+ksquid:S00100w"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¦©ûûÿÿÿÿ
+wsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(——÷Íùÿÿÿÿ
+gsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(¥§üÂıÿÿÿÿ
+csquid:S1192/"LUse already-defined constant 'PASSQA' instead of duplicating its value here.(ÌàË‚
 rsquid:S00115
 "ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã¤š
-csquid:S1192/"LUse already-defined constant 'PASSQA' instead of duplicating its value here.(ÌàË‚
-;squid:S1148"#Use a logger to log this exception.(¸ß¹
-?squid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-@squid:S1481y")Remove this unused "stmt" local variable.(–ÔÀ¡
-gsquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(¥§üÂıÿÿÿÿ
-?squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Gsquid:S00108’")Either remove or fill this block of code.(„õ Öşÿÿÿÿ
 nsquid:S00117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅÅÇÜüÿÿÿÿ
-@squid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+gsquid:CommentedOutCodeLinev"<This block of commented-out lines of code should be removed.(Ê€âšúÿÿÿÿ
 rsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(’³ğº
+Tsquid:S2589‘"7Remove this expression which always evaluates to "true"(êÑßüÿÿÿÿ
+?squid:S1148m"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Çµí‘
+gsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(©ö÷ÿÿÿÿÿ
+Ysquid:S00107w"<Method has 8 parameters, which is greater than 7 authorized.(¬¦©ûûÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(œ€çß
+nsquid:S00117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞÊ™˜ÿÿÿÿÿ
+@squid:S1481y")Remove this unused "stmt" local variable.(–ÔÀ¡
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øó¬­
+:squid:S1148#"#Use a logger to log this exception.(¸ß¹
+:squid:S11488"#Use a logger to log this exception.(¸ß¹
+isquid:S1192%"RDefine a constant instead of duplicating this literal "Error Exception: " 3 times.(Ç¿œ†
+Fsquid:S00108q")Either remove or fill this block of code.(„õ Öşÿÿÿÿ
+:squid:S1148M"#Use a logger to log this exception.(¸ß¹
+;squid:S1148"#Use a logger to log this exception.(¸ß¹
+isquid:S00117D"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌàË‚
