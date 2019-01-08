@@ -1,5 +1,6 @@
 package com.tresit.automation.utilidad.Browser;
 
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -52,14 +53,18 @@ public class WebSelector {
 
         // Predefinir carpeta de descarga  (SERA UNA MEJORA)
         FirefoxProfile profile = new FirefoxProfile();
-        //profile.setPreference("browser.download.folderList", 2);
-        //profile.setPreference("browser.download.dir", carpetaDescarga);   // System.getProperty("user.dir")
-        FirefoxOptions option = new FirefoxOptions();
-        //option.setProfile(profile);
+        profile.setPreference("browser.download.folderList",2);
+        profile.setPreference("browser.download.dir", "C:\\Users\\3it\\Downloads");
+        profile.setPreference("browser.download.manager.showWhenStarting", false);
+        profile.setPreference("browser.helperApps.neverAsk.saveToDisk","application/msword,application/csv,text/csv,application/rtf,application/xml,text/xml,application/octet-stream,application/vnd.ms-excel,application/zip,text/txt,text/plain,application/pdf,application/x-pdf,text/html");
 
+        profile.setPreference("browser.download.panel.shown",false);
+
+        FirefoxOptions option = new FirefoxOptions();
+        option.setProfile(profile);
 
         System.setProperty("webdriver.gecko.driver", "C://Automatizacion//WebDriver//geckodriver.exe");
-        FirefoxDriver driver = new FirefoxDriver();
+        FirefoxDriver driver = new FirefoxDriver(option);
         driver.get(url);
         return driver;
     }
