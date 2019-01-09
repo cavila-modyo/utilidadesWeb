@@ -14,13 +14,12 @@ import java.io.FileInputStream;
 
 public class PDF {
 
-
-    /*public static void main(String [] Args){
+    /*
+    public static void main(String [] Args){
         String carpeta = "C:\\Automatizacion\\ATC\\Imagenes";
         String nombrePDF = "ArchivoPrueba";
         GeneratePDF_Images(carpeta, nombrePDF);
     }*/
-
 
     public static void GeneratePDF_Images(String carpeta, String NombreArchivo) {
         try {
@@ -34,19 +33,21 @@ public class PDF {
             PDDocument document = new PDDocument();
 
             for(File imagen : folderImages.listFiles()) {
-                FileInputStream in = FileUtils.openInputStream(imagen);
-                BufferedImage bimg = ImageIO.read(in);
-                float width = bimg.getWidth();
-                float height = bimg.getHeight();
-                PDPage page = new PDPage(new PDRectangle(width, height));
-                document.addPage(page);
 
-                PDImageXObject img = PDImageXObject.createFromFileByContent(imagen, document);
+                if(imagen.getName().contains(".png")) {
+                    FileInputStream in = FileUtils.openInputStream(imagen);
+                    BufferedImage bimg = ImageIO.read(in);
+                    //PDPage page = new PDPage(new PDRectangle(bimg.getWidth(), bimg.getHeight()));
+                    PDPage page = new PDPage(new PDRectangle(PDRectangle.A4.getWidth(),PDRectangle.A4.getHeight()));
+                    document.addPage(page);
 
-                PDPageContentStream contentStream = new PDPageContentStream(document, page);
-                contentStream.drawImage(img, 0, 0);
-                contentStream.close();
-                in.close();
+                    PDImageXObject img = PDImageXObject.createFromFileByContent(imagen, document);
+
+                    PDPageContentStream contentStream = new PDPageContentStream(document, page);
+                    contentStream.drawImage(img, 70, 500, bimg.getWidth() / 3, bimg.getHeight() / 3);
+                    contentStream.close();
+                    in.close();
+                }
             }
 
             document.save(carpeta + "\\" + NombreArchivo + ".PDF");
