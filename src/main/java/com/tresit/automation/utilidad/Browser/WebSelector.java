@@ -1,6 +1,5 @@
 package com.tresit.automation.utilidad.Browser;
 
-import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -54,7 +53,7 @@ public class WebSelector {
         // Predefinir carpeta de descarga  (SERA UNA MEJORA)
         FirefoxProfile profile = new FirefoxProfile();
         profile.setPreference("browser.download.folderList",2);
-        profile.setPreference("browser.download.dir", "C:\\Users\\3it\\Downloads");
+        //profile.setPreference("browser.download.dir", "C:\\Users\\3it\\Downloads");
         profile.setPreference("browser.download.manager.showWhenStarting", false);
         profile.setPreference("browser.helperApps.neverAsk.saveToDisk","application/msword,application/csv,text/csv,application/rtf,application/xml,text/xml,application/octet-stream,application/vnd.ms-excel,application/zip,text/txt,text/plain,application/pdf,application/x-pdf,text/html");
 

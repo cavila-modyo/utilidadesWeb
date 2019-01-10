@@ -57,6 +57,11 @@ public class ElementosUdla {
     private static String btn_errorCupoDescarga = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]";
     private static String btn_errorPreliminarDescarga = "/html[1]/body[1]/app-root[1]/app-layout[1]/section[1]/app-proceso[1]/div[1]/div[1]/div[1]/div[1]/mat-vertical-stepper[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]";
 
+    // Cerrar Sesion
+
+    private static String btn_FlechaSesion = "/html/body/app-root/app-layout/app-header/div/div[2]/div/div[2]";
+    private static String btn_CerrarSesion = "/html/body/app-root/app-layout/app-header/div/div[2]/div/div[2]/div/div";
+
 
     public static String getTxt_usuario() {
         return txt_usuario;
@@ -234,31 +239,23 @@ public class ElementosUdla {
         return label_DocumentoCupoSubido2;
     }
 
-    public static void setLabel_DocumentoCupoSubido2(String label_DocumentoCupoSubido2) {
-        ElementosUdla.label_DocumentoCupoSubido2 = label_DocumentoCupoSubido2;
-    }
-
     public static String getLabel_DocumentoPreliminarSubido2() {
         return label_DocumentoPreliminarSubido2;
-    }
-
-    public static void setLabel_DocumentoPreliminarSubido2(String label_DocumentoPreliminarSubido2) {
-        ElementosUdla.label_DocumentoPreliminarSubido2 = label_DocumentoPreliminarSubido2;
     }
 
     public static String getPopupCupo2() {
         return popupCupo2;
     }
 
-    public static void setPopupCupo2(String popupCupo2) {
-        ElementosUdla.popupCupo2 = popupCupo2;
-    }
-
     public static String getPopupPreliminar2() {
         return popupPreliminar2;
     }
 
-    public static void setPopupPreliminar2(String popupPreliminar2) {
-        ElementosUdla.popupPreliminar2 = popupPreliminar2;
+    public static String getBtn_FlechaSesion() {
+        return btn_FlechaSesion;
+    }
+
+    public static String getBtn_CerrarSesion() {
+        return btn_CerrarSesion;
     }
 }

@@ -21,38 +21,29 @@ import java.util.List;
 public class CompararArchivos {
 
 
+    //public static void main(String args[]){
 
-    public static void main(String args[]){
-        //Csv_Leer();
-        // C:\Automatizacion\Documentos Prueba\PruebaExcel.xls
-        // C:\Automatizacion\Documentos Prueba\PruebaExcel.xlsx
-        //File f = new File("C:\\Users\\3it\\Downloads\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\Descargas\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteCupos.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteAlumnos.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantes.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantesDetalle.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File p = new File("C:\\Automatizacion\\ATC_TEST\\Descargas\\Resultado_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteCupos_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteAlumnos_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantes_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //File p = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\AlumnosFaltantesDetalle_comparar.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-
-        File f = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0030_chrome\\Resultado_2018-12-12 02_28_17.xlsx");
-        File p = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0030_validar_regla_no_asignar_en_ID_111\\Descargas\\Resultado_2018-12-20 09_41_43.xlsx");
+    //File f = new File("C:\\Users\\3it\\Downloads\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
+        /*
+        File f = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_chrome\\Resultado_2018-12-11 12_54_18.xlsx");
+        File p = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_validar_regla_general_sede_chrome_ID_168\\Descargas\\Resultado_80_2019-01-09 03_29_52.xlsx");
         comparaListasResultado(f,p,"C:\\Users\\3it\\Desktop\\Ejecucion Servidor");
+        */
+
+        /*
+        File t = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_chrome\\AlumnosFaltantes_2018-12-11 01_37_20.xlsx");
+        File s = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_validar_regla_general_sede_chrome_ID_168\\Descargas\\AlumnosFaltantes_80_2019-01-09 03_30_07.xlsx");
+        comparaListasResultadoAlumnoFaltantes(t,s,"C:\\Users\\3it\\Desktop\\Ejecucion Servidor");
 
         //comparaListasResultado(f,p,"C:\\Automatizacion\\ATC_TEST\\Descargas");
         //comparaListasResultadoCupo(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
         //comparaListasResultadoAlumnoFaltantesDetalle(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
+        */
 
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteCupos.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //List<ReporteCupoInternado> lista = LeerExcelConClaseCupoInternado(f);
+    //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
+    //LeerExcel(p);       }
 
-        //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //LeerExcel(p);
-    }
+    //}
 
 
     public static void comparaListasResultado(File f, File p, String rutaArchivoComparacion){
