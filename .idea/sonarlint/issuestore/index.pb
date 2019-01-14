@@ -25,7 +25,15 @@ Ssrc/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/CompararArchivos.
 Ksrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionMySQL.java,8\b\8bf3bc652ed8f2c3190d20cbe3d1b25df8d02a1a
 
 Osrc/main/java/com/tresit/automation/utilidad/ConexionSQL/ConexionSQLServer.java,0\3\036fb7239a5f1f1ae037b743ea15e30a4d599ec2
-à
-Xsrc/main/java/com/tresit/automation/utilidad/Elementos_Sitios/ElementosUdla_Firefox.java,c\e\ceadef22d87f34234427bb0eadc346c1123e2833
 è
 _src/main/java/com/tresit/automation/utilidad/BD_Automatizacion/Procedures/InsertaEjecucion.java,9\7\9789b5785a66f66fbbd5e64a6891f09eb13b7b16
+Ä
+Psrc/main/java/com/tresit/automation/utilidad/Herramientas/ImpresionPantalla.java,2\7\272f40ef1e0bd53897219a6a45c1d50bf3686f82
+~
+Nsrc/main/java/com/tresit/automation/utilidad/Herramientas/FechaHoraActual.java,0\f\0f852fd3c3fb0a2c31b27ba93d0af16087835f26
+r
+Bsrc/main/java/com/tresit/automation/utilidad/Herramientas/Log.java,1\b\1bb21ff755f6cd402f0a90495dd9a8b15e77025f
+å
+\src/main/java/com/tresit/automation/utilidad/ClasesUtilesUdla/AlumnosFaltantesInternado.java,1\8\18cab89352f6ea593fe99d01c99963da9609d1e0
+r
+Bsrc/main/java/com/tresit/automation/utilidad/Herramientas/PDF.java,1\e\1e8a0d180f2ce88f818bb9301ecb9ed5606a070b

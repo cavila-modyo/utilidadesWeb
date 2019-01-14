@@ -1,14 +1,14 @@
 
-’squid:S00116"pRename this field "ArchivoResultadoAlumnoFaltanteDetalle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åœøüÿÿÿÿ8œÔÂú,
-wsquid:S00116"URename this field "NombreCaso" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¢ıˆúÿÿÿÿ8œÔÂú,
-‚squid:S00116"`Rename this field "RutaArchivoPreliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ıœƒûÿÿÿÿ8œÔÂú,
-}squid:S00116"[Rename this field "ArchivoResultado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãáäúÿÿÿÿ8œÔÂú,
-osquid:S00116"RRename this field "Carpeta" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¨ô’8œÔÂú,
 }squid:S00116"aRename this field "ArchivoResultadoAlumno" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ÌƒX8œÔÂú,
-|squid:S00116"ZRename this field "RutaArchivoCupo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ã–Ïøÿÿÿÿ8œÔÂú,
+}squid:S00116"[Rename this field "ArchivoResultado" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãáäúÿÿÿÿ8œÔÂú,
 ‹squid:S00116"iRename this field "ArchivoResultadoAlumnoFaltante" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Á’£‘ùÿÿÿÿ8œÔÂú,
 squid:S00116"_Rename this field "ArchivoResultadoCupo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½°Ú¿şÿÿÿÿ8œÔÂú,
+osquid:S00116"RRename this field "Carpeta" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È¨ô’8œÔÂú,
 osquid:S00116"RRename this field "BROWSER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şğ©Û8œÔÂú,
+’squid:S00116"pRename this field "ArchivoResultadoAlumnoFaltanteDetalle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åœøüÿÿÿÿ8œÔÂú,
 |squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(î’€Ôúÿÿÿÿ8œÔÂú,
 ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Ì€ÿúÿÿÿÿ8œÔÂú,
+wsquid:S00116"URename this field "NombreCaso" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¢ıˆúÿÿÿÿ8œÔÂú,
 squid:S00116"_Rename this field "PathDescargasUsuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÍ©øÿÿÿÿ8œÔÂú,
+‚squid:S00116"`Rename this field "RutaArchivoPreliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ıœƒûÿÿÿÿ8œÔÂú,
+|squid:S00116"ZRename this field "RutaArchivoCupo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²Ã–Ïøÿÿÿÿ8œÔÂú,

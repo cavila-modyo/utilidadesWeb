@@ -1,79 +1,77 @@
 
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ·›ï8¼ºŸÑ‚-
-ysquid:S3008"]Rename this field "btn_ContinuarPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û«¼É8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ôğ®8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿà’ı8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šû±¨8¼ºŸÑ‚-
-zsquid:S3008"YRename this field "btn_AtrasPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔıŠÑùÿÿÿÿ8¼ºŸÑ‚-
-psquid:S3008"TRename this field "btn_Login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞïÒá8¼ºŸÑ‚-
-‚squid:S3008"fRename this field "btn_errorPreliminarDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†±â¡8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹üßÇ8¼ºŸÑ‚-
-Jsquid:S1068".Remove this unused "popupCupo2" private field.(îô¬8Ø”ìê‚-
-Usquid:S1068"4Remove this unused "popupPreliminar2" private field.(ïµ›²ùÿÿÿÿ8†¼ìê‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Šˆøÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÉ€Ìúÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Â×¯øÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­±±Ù8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úİ ³ûÿÿÿÿ8¼ºŸÑ‚-
-ˆsquid:S3008"lRename this field "descargaResultado_AlumnosFaltante" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù®Í¨8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸØìÆ8¼ºŸÑ‚-
-|squid:S3008"`Rename this field "cmbCampus_Providencia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ââŠ•8¼ºŸÑ‚-
-€squid:S3008"dRename this field "label_DocumentoCupoSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ĞÖÜ8¼ºŸÑ‚-
-„squid:S3008"cRename this field "cmbCampus_SantiagoCentro" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒË»Ìûÿÿÿÿ8¼ºŸÑ‚-
-jsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¸8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Åì8¼ºŸÑ‚-
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹üßÇ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ‹‡¡úÿÿÿÿ8¼ºŸÑ‚-
-squid:S3008"`Rename this field "cmbCarrera_Enfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êœáÎıÿÿÿÿ8¼ºŸÑ‚-
-ƒsquid:S3008"gRename this field "cmbCarrera_TecnicoEnfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨›8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì˜¯€ıÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¼‚çúÿÿÿÿ8¼ºŸÑ‚-
-[squid:S1118":Add a private constructor to hide the implicit public one.(éíæÍûÿÿÿÿ8¼ºŸÑ‚-
-vsquid:S3008"ZRename this field "LabelPreliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½©û8¼ºŸÑ‚-
-|squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬±‘ıÿÿÿÿ8¼ºŸÑ‚-
-€squid:S3008"dRename this field "descargaResultado_Alumnos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×é•¥8¼ºŸÑ‚-
-|squid:S3008"`Rename this field "cmbCampus_LosCastanos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡³Ö¶8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³¡çüÿÿÿÿ8¼ºŸÑ‚-
-zsquid:S3008"YRename this field "btn_AtrasPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¨öÿÿÿÿÿ8¼ºŸÑ‚-
-…squid:S3008"jRename this field "label_DocumentoPreliminarSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àì’J8¼ºŸÑ‚-
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÉä†8¼ºŸÑ‚-
-€squid:S3008"eRename this field "label_DocumentoCupoSubido2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øºâo8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¯Şúÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÜóÂ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Œï8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÈ€ÿøÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×ƒÀÿÿÿÿÿ8¼ºŸÑ‚-
-qsquid:S3008"URename this field "Labelcupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÆ³´8¼ºŸÑ‚-
-~squid:S3008"bRename this field "cmbCarrera_Kinesiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éîÑô8¼ºŸÑ‚-
-squid:S3008"sRename this field "descargaResultado_AlumnosFaltanteDetalle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸°“8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚«Ê 8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ŸùÇüÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùœ÷Ñ8¼ºŸÑ‚-
-|squid:S3008"`Rename this field "btn_errorCupoDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¯Ûú8¼ºŸÑ‚-
-jsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×â:8¼ºŸÑ‚-
-zsquid:S3008"^Rename this field "cmbCampus_LaFlorida" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†îà£8¼ºŸÑ‚-
-{squid:S3008"ZRename this field "cmbCampus_Maipu" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥µ¦Ãøÿÿÿÿ8¼ºŸÑ‚-
-squid:S3008"`Rename this field "cmbSede_Metropolitana" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äûãıÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆòÚü8¼ºŸÑ‚-
-tsquid:S3008"SRename this field "txt_pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ã’ùüÿÿÿÿ8¼ºŸÑ‚-
-rsquid:S3008"VRename this field "txt_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Û¤Á8¼ºŸÑ‚-
-squid:S3008"^Rename this field "cmbSede_ViÃ±aDelMar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜×ÓËøÿÿÿÿ8¼ºŸÑ‚-
-{squid:S3008"ZRename this field "EncabezadoPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÄ„ğùÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÉä†8¼ºŸÑ‚-
-~squid:S3008"]Rename this field "btn_ContinuarPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¦Äşÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ˆ¹ğşÿÿÿÿ8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑ…8¼ºŸÑ‚-
-€squid:S3008"dRename this field "cmbCarrera_Fonoaudiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ö‹8¼ºŸÑ‚-
-{squid:S3008"ZRename this field "EncabezadoPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âç½Èşÿÿÿÿ8¼ºŸÑ‚-
-ƒsquid:S3008"bRename this field "descargaResultado_Cupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó€¦¦úÿÿÿÿ8¼ºŸÑ‚-
-ssquid:S3008"RRename this field "Excelin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úè¤×øÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ³ıŒşÿÿÿÿ8¼ºŸÑ‚-
-Šsquid:S3008"iRename this field "cmbCarrera_NutricionyDietetica" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©°Ùşÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¿‡Ûüÿÿÿÿ8¼ºŸÑ‚-
-ysquid:S3008"]Rename this field "cmbSede_Concepcion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”²™8¼ºŸÑ‚-
-ƒsquid:S3008"hRename this field "cmbCarrera_TerapiaOcupacional" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¬•8¼ºŸÑ‚-
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍŒªİ8¼ºŸÑ‚-
-{squid:S3008"ZRename this field "EncabezadoPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®­…¤úÿÿÿÿ8¼ºŸÑ‚-
-Œsquid:S3008"kRename this field "label_DocumentoPreliminarSubido2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ê²œüÿÿÿÿ8¼ºŸÑ‚-
-}squid:S3008"\Rename this field "cmbCampus_ElBodal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â£ÄÖùÿÿÿÿ8¼ºŸÑ‚-
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡š•™ıÿÿÿÿ8¼ºŸÑ‚-
+‡squid:S30087"jRename this field "label_DocumentoPreliminarSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àì’J8‚ç™ƒ-
+~squid:S3008?"[Rename this field "btn_CerrarSesion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÅõÿÿÿÿÿ8¡Ğ§ƒ-
+|squid:S3008"^Rename this field "cmbCampus_LaFlorida" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†îà£8‚ç™ƒ-
+ssquid:S00100ê"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¿‡Ûüÿÿÿÿ8‚ç™ƒ-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬±‘ıÿÿÿÿ8‚ç™ƒ-
+ysquid:S3008>"[Rename this field "btn_FlechaSesion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë½Ü8¼à¥ƒ-
+msquid:S00100~"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ôğ®8‚ç™ƒ-
+nsquid:S00100–"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùœ÷Ñ8‚ç™ƒ-
+{squid:S3008"]Rename this field "cmbSede_Concepcion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”²™8‚ç™ƒ-
+}squid:S3008,"ZRename this field "EncabezadoPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®­…¤úÿÿÿÿ8‚ç™ƒ-
+lsquid:S00100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©¸8‚ç™ƒ-
+ssquid:S00100‚"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëË¥˜øÿÿÿÿ8ó×­ƒ-
+tsquid:S3008"VRename this field "txt_usuario" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Û¤Á8‚ç™ƒ-
+‚squid:S30085"dRename this field "label_DocumentoCupoSubido" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ĞÖÜ8‚ç™ƒ-
+]squid:S1118":Add a private constructor to hide the implicit public one.(éíæÍûÿÿÿÿ8‚ç™ƒ-
+nsquid:S00100’"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šû±¨8‚ç™ƒ-
+ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ‹‡¡úÿÿÿÿ8‚ç™ƒ-
+msquid:S00100r"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑ…8‚ç™ƒ-
+‚squid:S30086"eRename this field "label_DocumentoCupoSubido2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øºâo8‚ç™ƒ-
+squid:S3008"\Rename this field "cmbCampus_ElBodal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â£ÄÖùÿÿÿÿ8‚ç™ƒ-
+ƒsquid:S3008"`Rename this field "cmbCarrera_Enfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êœáÎıÿÿÿÿ8‚ç™ƒ-
+ssquid:S00100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Šˆøÿÿÿÿ8‚ç™ƒ-
+}squid:S3008"ZRename this field "cmbCampus_Maipu" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥µ¦Ãøÿÿÿÿ8‚ç™ƒ-
+~squid:S3008"`Rename this field "cmbCampus_LosCastanos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡³Ö¶8‚ç™ƒ-
+ssquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×ƒÀÿÿÿÿÿ8‚ç™ƒ-
+xsquid:S3008&"ZRename this field "LabelPreliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½©û8‚ç™ƒ-
+rsquid:S00100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ˆ¹ğşÿÿÿÿ8‚ç™ƒ-
+nsquid:S00100Ú"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆòÚü8‚ç™ƒ-
+ssquid:S3008%"URename this field "Labelcupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïÆ³´8‚ç™ƒ-
+|squid:S3008""YRename this field "btn_AtrasPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³¨öÿÿÿÿÿ8‚ç™ƒ-
+squid:S3008"^Rename this field "cmbSede_ViÃ±aDelMar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜×ÓËøÿÿÿÿ8‚ç™ƒ-
+msquid:S00100b"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­±±Ù8‚ç™ƒ-
+nsquid:S00100ì"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Œï8‚ç™ƒ-
+ssquid:S00100ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÉ€Ìúÿÿÿÿ8‚ç™ƒ-
+rsquid:S00100z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ³ıŒşÿÿÿÿ8‚ç™ƒ-
+|squid:S3008!"YRename this field "btn_AtrasPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔıŠÑùÿÿÿÿ8‚ç™ƒ-
+ssquid:S00100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨³¡çüÿÿÿÿ8‚ç™ƒ-
+ssquid:S00100ª"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÈ€ÿøÿÿÿÿ8‚ç™ƒ-
+nsquid:S00100¢"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍŒªİ8‚ç™ƒ-
+ssquid:S00100ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„°×Ûúÿÿÿÿ8ó×­ƒ-
+nsquid:S00100†"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿà’ı8‚ç™ƒ-
+Œsquid:S3008"iRename this field "cmbCarrera_NutricionyDietetica" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©°Ùşÿÿÿÿ8‚ç™ƒ-
+€squid:S3008#"]Rename this field "btn_ContinuarPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–¦Äşÿÿÿÿ8‚ç™ƒ-
+squid:S30088"kRename this field "label_DocumentoPreliminarSubido2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ê²œüÿÿÿÿ8‚ç™ƒ-
+‘squid:S30083"sRename this field "descargaResultado_AlumnosFaltanteDetalle" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸°“8‚ç™ƒ-
+usquid:S3008."RRename this field "Excelin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úè¤×øÿÿÿÿ8‚ç™ƒ-
+€squid:S3008"bRename this field "cmbCarrera_Kinesiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éîÑô8‚ç™ƒ-
+rsquid:S00100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡š•™ıÿÿÿÿ8‚ç™ƒ-
+Šsquid:S30082"lRename this field "descargaResultado_AlumnosFaltante" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù®Í¨8‚ç™ƒ-
+vsquid:S3008"SRename this field "txt_pass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—Ã’ùüÿÿÿÿ8‚ç™ƒ-
+rsquid:S00100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Úİ ³ûÿÿÿÿ8‚ç™ƒ-
+ssquid:S00100¦"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¯Şúÿÿÿÿ8‚ç™ƒ-
+nsquid:S00100Ş"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÜóÂ8‚ç™ƒ-
+ssquid:S00100æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Â×¯øÿÿÿÿ8‚ç™ƒ-
+~squid:S30089"`Rename this field "btn_errorCupoDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª¯Ûú8‚ç™ƒ-
+}squid:S3008-"ZRename this field "EncabezadoPaso3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âç½Èşÿÿÿÿ8‚ç™ƒ-
+…squid:S30080"bRename this field "descargaResultado_Cupos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó€¦¦úÿÿÿÿ8‚ç™ƒ-
+}squid:S3008+"ZRename this field "EncabezadoPaso1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÄ„ğùÿÿÿÿ8‚ç™ƒ-
+„squid:S3008:"fRename this field "btn_errorPreliminarDescarga" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†±â¡8‚ç™ƒ-
+msquid:S00100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ·›ï8‚ç™ƒ-
+…squid:S3008"hRename this field "cmbCarrera_TerapiaOcupacional" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¬•8‚ç™ƒ-
+{squid:S3008$"]Rename this field "btn_ContinuarPaso2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û«¼É8‚ç™ƒ-
+rsquid:S00100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì˜¯€ıÿÿÿÿ8‚ç™ƒ-
+msquid:S00100Š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­×â:8‚ç™ƒ-
+…squid:S3008"gRename this field "cmbCarrera_TecnicoEnfermeria" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨›8‚ç™ƒ-
+nsquid:S00100Ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚«Ê 8‚ç™ƒ-
+ƒsquid:S3008"`Rename this field "cmbSede_Metropolitana" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äûãıÿÿÿÿ8‚ç™ƒ-
+msquid:S00100n"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸØìÆ8‚ç™ƒ-
+msquid:S00100v"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¶Åì8‚ç™ƒ-
+~squid:S3008"`Rename this field "cmbCampus_Providencia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ââŠ•8‚ç™ƒ-
+ssquid:S00100â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ŸùÇüÿÿÿÿ8‚ç™ƒ-
+ssquid:S00100î"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò¼‚çúÿÿÿÿ8‚ç™ƒ-
+‚squid:S3008"dRename this field "cmbCarrera_Fonoaudiologia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ö‹8‚ç™ƒ-
+†squid:S3008"cRename this field "cmbCampus_SantiagoCentro" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒË»Ìûÿÿÿÿ8‚ç™ƒ-
+‚squid:S30081"dRename this field "descargaResultado_Alumnos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×é•¥8‚ç™ƒ-
+rsquid:S3008	"TRename this field "btn_Login" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞïÒá8‚ç™ƒ-

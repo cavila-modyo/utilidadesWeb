@@ -1,0 +1,19 @@
+
+nsquid:S3008"WRename this field "Milisegundos" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÓ»“
+nsquid:S3008"WRename this field "FechaCaptura" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ†ıÌ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ⁄Öœ˚ˇˇˇˇ
+fsquid:HiddenFieldCheck"?Rename "fechaActual" which hides the field declared at line 16.(Ø”Úñ¯ˇˇˇˇ
+gsquid:HiddenFieldCheck"@Rename "Milisegundos" which hides the field declared at line 17.(ëÆíò˙ˇˇˇˇ
+gsquid:HiddenFieldCheck"@Rename "FechaCaptura" which hides the field declared at line 18.(Ó‚™ç˙ˇˇˇˇ
+Qsquid:S2209""5Change this instance-reference to a static reference.(£Õ‹„ˇˇˇˇˇ
+Qsquid:S2209&"5Change this instance-reference to a static reference.(£Õ‹„ˇˇˇˇˇ
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔìÆ⁄
+^squid:S00112."FDefine and throw a dedicated exception instead of using a generic one.(“Ø˝£
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÆíò˙ˇˇˇˇ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó‚™ç˙ˇˇˇˇ
+isquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Ø˝£
+isquid:S001174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌõÜã
+isquid:S001177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¯“±
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÓíÄ‘˙ˇˇˇˇ
+gsquid:UselessImportCheck"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(Üê»
+Wsquid:UselessImportCheck"3Remove this unused import 'org.openqa.selenium.By'.(ˇäﬁõ

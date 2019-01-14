@@ -1,125 +1,124 @@
 
-Çsquid:S1192…"§Define a constant instead of duplicating this literal "Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos." 5 times.(ê—Ü 8¨üÅú,
-‡squid:S1192ß"hDefine a constant instead of duplicating this literal ", Campo RutEstudiante Valores Distintos" 3 times.(ø…Ì8üÄÈÕş,
-Usquid:S1854Ù"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-jsquid:S1192@"LDefine a constant instead of duplicating this literal "Archivo_2: " 5 times.(Œ™Ê8¨üÅú,
-Ysquid:S1854º":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8¨üÅú,
-usquid:S1192à"WDefine a constant instead of duplicating this literal "Error al leer_ xlsx: " 10 times.(†İÉ18¨üÅú,
-Nsquid:S1066‹"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-Usquid:S1854ø"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Nsquid:S1066Æ"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-~squid:S1149ø"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-Jsquid:S1481º"+Remove this unused "celdas" local variable.(ÿÙ£÷8¨üÅú,
-€squid:S1192H"bDefine a constant instead of duplicating this literal "Cantidad de Registros Archivo 2: " 5 times.(şü×Á8¨üÅú,
-Ysquid:S1854ˆ":Remove this useless assignment to local variable "celdas".(•¾ã8¨üÅú,
-Fsquid:S1481Ù"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Jsquid:S1481"+Remove this unused "celdas" local variable.(•¾ã8¨üÅú,
+Ysquid:S1141¬"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+~squid:S1149¯"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+ssquid:S00100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚöŞÖşÿÿÿÿ8ƒÛÕ¾ƒ-
+§squid:S1192B"ƒDefine a constant instead of duplicating this literal "Cantidad de Registros es cero para uno de los archivos a comparar." 5 times.(€„¿üÿÿÿÿ8ƒÛÕ¾ƒ-
+Gsquid:S1148’"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õ÷Íûÿÿÿÿ8•ùÔ¾ƒ-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²¢üŞûÿÿÿÿ8•ùÔ¾ƒ-
+Nsquid:S1066²"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+qsquid:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ƒç¿¾8ƒÛÕ¾ƒ-
+Usquid:S1854ï"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Jsquid:S1481ì"+Remove this unused "celdas" local variable.(•¾ã8ƒÛÕ¾ƒ-
+Usquid:S1854Ğ"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+osquid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(ƒ–û–úÿÿÿÿ8ƒÛÕ¾ƒ-
+qsquid:S3776®"RRefactor this method to reduce its Cognitive Complexity from 90 to the 15 allowed.(Ø»ÌÔ8ƒÛÕ¾ƒ-
+Ysquid:S1141¢"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1854Û":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8ƒÛÕ¾ƒ-
+Ysquid:S1854Ú":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8ƒÛÕ¾ƒ-
+Fsquid:S1481ô"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+~squid:S1149Š"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+Fsquid:S1481Ì"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+Jsquid:S1481Û"+Remove this unused "celdas" local variable.(ÿÙ£÷8ƒÛÕ¾ƒ-
+Jsquid:S1481×"+Remove this unused "celdas" local variable.(•¾ã8ƒÛÕ¾ƒ-
+Fsquid:S1481à"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+usquid:S1192×"WDefine a constant instead of duplicating this literal "Error al leer_ xlsx: " 10 times.(†İÉ18ƒÛÕ¾ƒ-
+Fsquid:S1481Ğ"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+~squid:S1149¥"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+~squid:S1149ô"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+Jsquid:S1481û"+Remove this unused "celdas" local variable.(•¾ã8ƒÛÕ¾ƒ-
+Gsquid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+nsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ƒÛÕ¾ƒ-
+Usquid:S1854¯"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+jsquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(‹ºœË8ƒÛÕ¾ƒ-
+Nsquid:S1066‚"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+Usquid:S1854¥"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Ysquid:S1854û":Remove this useless assignment to local variable "celdas".(•¾ã8ƒÛÕ¾ƒ-
+]squid:S1118":Add a private constructor to hide the implicit public one.(Õô÷¾ûÿÿÿÿ8•ùÔ¾ƒ-
+Ysquid:S1854×":Remove this useless assignment to local variable "celdas".(•¾ã8ƒÛÕ¾ƒ-
+Fsquid:S1481ï"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+psquid:S3776â"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(€ğùV8ƒÛÕ¾ƒ-
+‡squid:S1192Ö"hDefine a constant instead of duplicating this literal ", Campo RutEstudiante Valores Distintos" 3 times.(ø…Ì8ƒÛÕ¾ƒ-
+nsquid:S00100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÊğú8ƒÛÕ¾ƒ-
+Jsquid:S1481•"+Remove this unused "celdas" local variable.(•¾ã8ƒÛÕ¾ƒ-
+qsquid:S3776¨"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(€à–˜8ƒÛÕ¾ƒ-
+msquid:S1192€"IDefine a constant instead of duplicating this literal "Error: " 16 times.(ÕÓ¹•úÿÿÿÿ8ƒÛÕ¾ƒ-
+jsquid:CommentedOutCodeLine¯"<This block of commented-out lines of code should be removed.(‹ºœË8ƒÛÕ¾ƒ-
+isquid:CommentedOutCodeLineÃ	"<This block of commented-out lines of code should be removed.(ƒÎÊ!8ƒÛÕ¾ƒ-
+nsquid:S00100Æ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒç¿¾8ƒÛÕ¾ƒ-
+Fsquid:S1481¦"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+Jsquid:S1481¯"+Remove this unused "celdas" local variable.(ÿÙ£÷8ƒÛÕ¾ƒ-
+Nsquid:S1066İ"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+Ysquid:S1854¯":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8ƒÛÕ¾ƒ-
+~squid:S1149à"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+~squid:S1149ï"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+vsquid:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ÚöŞÖşÿÿÿÿ8ƒÛÕ¾ƒ-
+qsquid:S1192­"SDefine a constant instead of duplicating this literal "Ruta del Archivo: " 5 times.(ÕôÏ8ƒÛÕ¾ƒ-
+Ysquid:S1141£"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1854±":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8ƒÛÕ¾ƒ-
+rsquid:S1192H"ODefine a constant instead of duplicating this literal "FilaExcel : " 104 times.(¯‚À¤ùÿÿÿÿ8ƒÛÕ¾ƒ-
+Gsquid:S1148Ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+Gsquid:S1148¼"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(¶¸Ğí8•ùÔ¾ƒ-
+Ysquid:S1141ˆ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1854º":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8ƒÛÕ¾ƒ-
+jsquid:S11927"LDefine a constant instead of duplicating this literal "Archivo_2: " 5 times.(Œ™Ê8ƒÛÕ¾ƒ-
+Fsquid:S1481¥"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+Fsquid:S1481Ğ"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+Nsquid:S1066Ú"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+Ysquid:S1141ò"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+wsquid:S3776‡"SRefactor this method to reduce its Cognitive Complexity from 132 to the 15 allowed.(æ¢òôúÿÿÿÿ8ƒÛÕ¾ƒ-
+Æsquid:S1192|"§Define a constant instead of duplicating this literal "Si el log no contiene esta frase 'Valores Distintos'. Entonces los archivos comparados, son identicos." 5 times.(ê—Ü 8ƒÛÕ¾ƒ-
+Nsquid:S1066´"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+~squid:S1149Ğ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+Ysquid:S1854ÿ":Remove this useless assignment to local variable "celdas".(•¾ã8ƒÛÕ¾ƒ-
+Jsquid:S1481±"+Remove this unused "celdas" local variable.(ÿÙ£÷8ƒÛÕ¾ƒ-
+Gsquid:S1148‚"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+Nsquid:S1066ï"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+Jsquid:S1481º"+Remove this unused "celdas" local variable.(ÿÙ£÷8ƒÛÕ¾ƒ-
+Gsquid:S1148Ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
 ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Õœ½Æ8¨üÅú,
-Nsquid:S1066½"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-Fsquid:S1481ı"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-vsquid:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ÚöŞÖşÿÿÿÿ8¨üÅú,
-jsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‹ºœË8¨üÅú,
-Fsquid:S1481“"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-qsquid:S1192¶"SDefine a constant instead of duplicating this literal "Ruta del Archivo: " 5 times.(ÕôÏ8¨üÅú,
-Fsquid:S1481¸"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Jsquid:S1481„"+Remove this unused "celdas" local variable.(•¾ã8¨üÅú,
-‹squid:S1192T"hDefine a constant instead of duplicating this literal ", Campo NombreCarrera Valores Distintos" 3 times.(ô•²âúÿÿÿÿ8¨üÅú,
-jsquid:CommentedOutCodeLine‡	"<This block of commented-out lines of code should be removed.(Õò›“8¨üÅú,
-Fsquid:S1481®"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Jsquid:S1481ã"+Remove this unused "celdas" local variable.(ÿÙ£÷8¨üÅú,
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ñÊñm8¨üÅú,
-_squid:S1075*"ARefactor your code to get this URI from a customizable parameter.(‹¯Ãş8üÄÈÕş,
-Usquid:S1854¯"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Gsquid:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-Ysquid:S1854õ":Remove this useless assignment to local variable "celdas".(•¾ã8¨üÅú,
-~squid:S1149Ù"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-Ysquid:S1854ã":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8¨üÅú,
-Usquid:S1854®"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-qsquid:S3776±"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(€à–˜8¨üÅú,
-Nsquid:S1066»"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-nsquid:S00100¤"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æå÷8¨üÅú,
-qsquid:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ƒç¿¾8¨üÅú,
-Nsquid:S1066‡"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-§squid:S1192K"ƒDefine a constant instead of duplicating this literal "Cantidad de Registros es cero para uno de los archivos a comparar." 5 times.(€„¿üÿÿÿÿ8üÄÈÕş,
-Nsquid:S1066ã"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-Gsquid:S1148‹"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-qsquid:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(Æå÷8¨üÅú,
-Gsquid:S1148Í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-~squid:S1149“"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-~squid:S1149¯"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-isquid:CommentedOutCodeLine×	"<This block of commented-out lines of code should be removed.(ƒÎÊ!8¨üÅú,
-~squid:S1149ı"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-~squid:S1149®"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-~squid:S1149é"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-squid:S1192Ü"kDefine a constant instead of duplicating this literal ", Campo NombreEstudiante Valores Distintos" 3 times.(÷ùùüÿÿÿÿ8üÄÈÕş,
-nsquid:S00100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒç¿¾8¨üÅú,
-Ysquid:S1141ç"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-nsquid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(™äŠ×ÿÿÿÿÿ8¨üÅú,
-Jsquid:S1481¸"+Remove this unused "celdas" local variable.(ÿÙ£÷8¨üÅú,
-jsquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(‹ºœË8¨üÅú,
-Ysquid:S1141‘"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-Ysquid:S1141Ö"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-Ysquid:S1854Ã":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8¨üÅú,
-Gsquid:S1148õ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-Jsquid:S1481ˆ"+Remove this unused "celdas" local variable.(•¾ã8¨üÅú,
-psquid:S3776®"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(®˜ËY8¨üÅú,
-Ysquid:S1854„":Remove this useless assignment to local variable "celdas".(•¾ã8¨üÅú,
-Nsquid:S1066¡"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-Fsquid:S1481é"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Ysquid:S1141û"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-squid:S1192c"kDefine a constant instead of duplicating this literal ", Campo CodigoAsignatura Valores Distintos" 4 times.(Øİàşÿÿÿÿ8¨üÅú,
-Fsquid:S1481¯"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Fsquid:S1481ø"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Nsquid:S1066ø"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-Ysquid:S1854":Remove this useless assignment to local variable "celdas".(•¾ã8¨üÅú,
-msquid:S1192‰"IDefine a constant instead of duplicating this literal "Error: " 16 times.(ÕÓ¹•úÿÿÿÿ8¨üÅú,
-qsquid:S3776·"RRefactor this method to reduce its Cognitive Complexity from 90 to the 15 allowed.(Ø»ÌÔ8¨üÅú,
-Nsquid:S1066æ"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-hsquid:CommentedOutCodeLine3"<This block of commented-out lines of code should be removed.(÷¬Ó~8¨üÅú,
-Gsquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-usquid:S3776:"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(Åéåùÿÿÿÿ8¨üÅú,
-Gsquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-isquid:CommentedOutCodeLineÌ	"<This block of commented-out lines of code should be removed.(ƒÎÊ!8¨üÅú,
-Usquid:S1854¸"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Usquid:S1854Ù"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Gsquid:S1148ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-Jsquid:S1481ä"+Remove this unused "celdas" local variable.(ÿÙ£÷8¨üÅú,
-Ysquid:S1141Ö"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-Ysquid:S1141µ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-nsquid:S00100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÊğú8¨üÅú,
-‹squid:S1192>"nDefine a constant instead of duplicating this literal "********************************************" 20 times.(ıÓ½Z8¨üÅú,
-rsquid:S1192Q"ODefine a constant instead of duplicating this literal "FilaExcel : " 104 times.(¯‚À¤ùÿÿÿÿ8¨üÅú,
-Gsquid:S1148š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-qsquid:S3776Ï"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ñÊğú8¨üÅú,
-Fsquid:S1481Õ"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Ysquid:S1141ö"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-Usquid:S1854ı"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Ysquid:S1141Ó"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-psquid:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(€ğùV8¨üÅú,
-Ysquid:S1854à":Remove this useless assignment to local variable "celdas".(•¾ã8¨üÅú,
-[squid:S1197"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ8¨üÅú,
-ssquid:S00100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚöŞÖşÿÿÿÿ8¨üÅú,
-Nsquid:S1066ç"/Merge this if statement with the enclosing one.(…ó€í8¨üÅú,
-~squid:S1149Õ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-Usquid:S1854“"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-~squid:S1149Ù"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-dsquid:S1075+"ARefactor your code to get this URI from a customizable parameter.(©¢æ­ıÿÿÿÿ8üÄÈÕş,
-jsquid:S1192?"LDefine a constant instead of duplicating this literal "Archivo_1: " 5 times.(Ô¢Ÿâ8¨üÅú,
-msquid:S00100®"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®˜ËY8¨üÅú,
-Ysquid:S1141«"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-€squid:S1192G"bDefine a constant instead of duplicating this literal "Cantidad de Registros Archivo 1: " 5 times.(á‰Ô¾8¨üÅú,
-Gsquid:S1148á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-Ysquid:S1854¸":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8¨üÅú,
-Usquid:S1854é"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-Jsquid:S1481Ã"+Remove this unused "celdas" local variable.(ÿÙ£÷8¨üÅú,
-Ysquid:S1854ä":Remove this useless assignment to local variable "celdas".(ÿÙ£÷8¨üÅú,
-Fsquid:S1481Ù"'Remove this unused "sb" local variable.(‰Áúƒ8¨üÅú,
-Gsquid:S1148ğ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨üÅú,
-isquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(û¡å8üÄÈÕş,
-Jsquid:S1481õ"+Remove this unused "celdas" local variable.(•¾ã8¨üÅú,
-wsquid:S3776"SRefactor this method to reduce its Cognitive Complexity from 132 to the 15 allowed.(æ¢òôúÿÿÿÿ8¨üÅú,
-Ysquid:S1141¬"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8¨üÅú,
-Usquid:S1854Õ"6Remove this useless assignment to local variable "sb".(‰Áúƒ8¨üÅú,
-osquid:CommentedOutCodeLineÈ"<This block of commented-out lines of code should be removed.(ƒ–û–úÿÿÿÿ8¨üÅú,
-~squid:S1149¸"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8¨üÅú,
-Jsquid:S1481à"+Remove this unused "celdas" local variable.(•¾ã8¨üÅú,
+jsquid:CommentedOutCodeLineş"<This block of commented-out lines of code should be removed.(Õò›“8ƒÛÕ¾ƒ-
+€squid:S1192?"bDefine a constant instead of duplicating this literal "Cantidad de Registros Archivo 2: " 5 times.(şü×Á8ƒÛÕ¾ƒ-
+Ysquid:S1141Í"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Gsquid:S1148‘"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+~squid:S1149¦"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+Gsquid:S1148ì"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+Usquid:S1854ô"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Ysquid:S1854•":Remove this useless assignment to local variable "celdas".(•¾ã8ƒÛÕ¾ƒ-
+qsquid:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(ñÊğú8ƒÛÕ¾ƒ-
+Jsquid:S1481ÿ"+Remove this unused "celdas" local variable.(•¾ã8ƒÛÕ¾ƒ-
+squid:S1192Z"kDefine a constant instead of duplicating this literal ", Campo CodigoAsignatura Valores Distintos" 4 times.(Øİàşÿÿÿÿ8ƒÛÕ¾ƒ-
+squid:S1192Ó"kDefine a constant instead of duplicating this literal ", Campo NombreEstudiante Valores Distintos" 3 times.(÷ùùüÿÿÿÿ8ƒÛÕ¾ƒ-
+Fsquid:S1481¯"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+usquid:S37761"RRefactor this method to reduce its Cognitive Complexity from 57 to the 15 allowed.(Åéåùÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1141Ş"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1141Ê"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ûààã8•ùÔ¾ƒ-
+‹squid:S11925"nDefine a constant instead of duplicating this literal "********************************************" 20 times.(ıÓ½Z8ƒÛÕ¾ƒ-
+Gsquid:S1148¼"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+psquid:S3776¥"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(®˜ËY8ƒÛÕ¾ƒ-
+msquid:S00100¥"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®˜ËY8ƒÛÕ¾ƒ-
+‹squid:S1192K"hDefine a constant instead of duplicating this literal ", Campo NombreCarrera Valores Distintos" 3 times.(ô•²âúÿÿÿÿ8ƒÛÕ¾ƒ-
+Ysquid:S1854ì":Remove this useless assignment to local variable "celdas".(•¾ã8ƒÛÕ¾ƒ-
+Usquid:S1854Ì"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Nsquid:S1066Ş"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+~squid:S1149Ğ"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-
+Ysquid:S1141Í"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Nsquid:S1066˜"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+jsquid:S11926"LDefine a constant instead of duplicating this literal "Archivo_1: " 5 times.(Ô¢Ÿâ8ƒÛÕ¾ƒ-
+Nsquid:S1066½"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+Nsquid:S1066ş"/Merge this if statement with the enclosing one.(…ó€í8ƒÛÕ¾ƒ-
+€squid:S1192>"bDefine a constant instead of duplicating this literal "Cantidad de Registros Archivo 1: " 5 times.(á‰Ô¾8ƒÛÕ¾ƒ-
+Gsquid:S1148í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ƒÛÕ¾ƒ-
+nsquid:S00100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æå÷8ƒÛÕ¾ƒ-
+Ysquid:S1141í"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ƒÛÕ¾ƒ-
+Usquid:S1854¦"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Usquid:S1854à"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+isquid:CommentedOutCodeLineÎ	"<This block of commented-out lines of code should be removed.(ƒÎÊ!8ƒÛÕ¾ƒ-
+Usquid:S1854Š"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+qsquid:S3776›"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(Æå÷8ƒÛÕ¾ƒ-
+Jsquid:S1481Ú"+Remove this unused "celdas" local variable.(ÿÙ£÷8ƒÛÕ¾ƒ-
+Usquid:S1854Ğ"6Remove this useless assignment to local variable "sb".(‰Áúƒ8ƒÛÕ¾ƒ-
+Fsquid:S1481Š"'Remove this unused "sb" local variable.(‰Áúƒ8ƒÛÕ¾ƒ-
+~squid:S1149Ì"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(‰Áúƒ8ƒÛÕ¾ƒ-

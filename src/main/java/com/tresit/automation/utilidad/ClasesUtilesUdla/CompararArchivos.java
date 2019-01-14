@@ -20,7 +20,6 @@ import java.util.List;
 
 public class CompararArchivos {
 
-
     //public static void main(String args[]){
 
     //File f = new File("C:\\Users\\3it\\Downloads\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
@@ -29,16 +28,15 @@ public class CompararArchivos {
         File p = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_validar_regla_general_sede_chrome_ID_168\\Descargas\\Resultado_80_2019-01-09 03_29_52.xlsx");
         comparaListasResultado(f,p,"C:\\Users\\3it\\Desktop\\Ejecucion Servidor");
         */
-
-        /*
-        File t = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_chrome\\AlumnosFaltantes_2018-12-11 01_37_20.xlsx");
-        File s = new File("C:\\Users\\3it\\Desktop\\Ejecucion Servidor\\atc_us_udsgp_0010_validar_regla_general_sede_chrome_ID_168\\Descargas\\AlumnosFaltantes_80_2019-01-09 03_30_07.xlsx");
+/*
+        File t = new File("C:\\Automatizacion\\ATC\\UDLA\\UDSGP-257\\Archivos\\atc_us_udsgp_0120_chrome\\AlumnosFaltantes_2018-12-20 02_22_28.xlsx");
+        File s = new File("C:\\Automatizacion\\ATC\\UDLA\\UDSGP-257\\Ejecuciones\\ATC_US_UDSGP_0130_TOC_Validar_Regla_General_SEDE_ID_233\\Descargas\\AlumnosFaltantes_129_2019-01-11 10_00_34.xlsx");
         comparaListasResultadoAlumnoFaltantes(t,s,"C:\\Users\\3it\\Desktop\\Ejecucion Servidor");
-
+*/
         //comparaListasResultado(f,p,"C:\\Automatizacion\\ATC_TEST\\Descargas");
         //comparaListasResultadoCupo(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
         //comparaListasResultadoAlumnoFaltantesDetalle(f,p,"C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas");
-        */
+
 
     //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
     //LeerExcel(p);       }
