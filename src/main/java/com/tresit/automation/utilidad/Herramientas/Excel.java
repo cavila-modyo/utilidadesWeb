@@ -195,7 +195,7 @@ public class Excel {
     }
 
     // Retorna el valor de la extension
-    private static String obtenerExtension(File archivo) {
+    public static String obtenerExtension(File archivo) {
 
         String retorno = "";
         try {
@@ -365,7 +365,6 @@ public class Excel {
         }
     }*/
 
-
     public static List<File> ArchivosExcelDeCarpeta(String path){
 
         // Definir la ruta donde quedan las descargas por usuario
@@ -406,6 +405,5 @@ public class Excel {
         }
         return path + "\\" + Excel.getName();
     }
-
 
 }
