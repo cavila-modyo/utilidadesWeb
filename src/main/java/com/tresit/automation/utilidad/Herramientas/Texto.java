@@ -1,6 +1,7 @@
 package com.tresit.automation.utilidad.Herramientas;
 
 
+import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.FD_Excel;
 import com.tresit.automation.utilidad.BD_Automatizacion.Tablas.EjecucionesLog;
 
 import java.io.*;
@@ -11,6 +12,8 @@ public class Texto {
 
     static EjecucionesLog Usuario = new EjecucionesLog();
     static ConfiguracionEjecucion configEjecucion = new ConfiguracionEjecucion();
+    BufferedWriter bw = null;
+    FileWriter fw = null;
 
     public static void muestraContenido(String archivo) throws FileNotFoundException, IOException {
         String cadena;
@@ -137,10 +140,6 @@ public class Texto {
         return configEjecucion;
     }
 
-
-    BufferedWriter bw = null;
-    FileWriter fw = null;
-
     public void ArchivoResultadoComparacion(String data, String carpeta) {
         try {
             File folder = new File(carpeta);
@@ -168,6 +167,35 @@ public class Texto {
             }
         }
     }
+
+    public void ArchivoFD(String DatoGenerado, String carpeta, String NombreFD) {
+        try {
+            File folder = new File(carpeta);
+            if (!folder.isDirectory()) {
+                folder.mkdirs();
+            }
+
+            File file = new File(carpeta + "\\" + NombreFD);
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            fw = new FileWriter(file.getAbsoluteFile(), true);
+            bw = new BufferedWriter(fw);
+            bw.write(DatoGenerado + "\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bw != null)
+                    bw.close();
+                if (fw != null)
+                    fw.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
 
 /*
     public static void main(String[] args) {
