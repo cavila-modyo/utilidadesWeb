@@ -9,9 +9,6 @@ import static com.tresit.automation.utilidad.Herramientas.Excel.LeerExcelFD;
 
 public class FD_Formato {
 
-    static Texto t = new Texto();
-    static String carpetaFD = "C:\\Automatizacion\\ATC\\FD_Automatic"; // carpeta de salida del archivo
-
     //static File p = new File("C:\\Automatizacion\\ATC\\FD_Automatic\\Ste_FD.xlsx");
     //static String NombreFD = "STE_TEST_ATC.TXT";
     //static String DatoPruebaValido = "111112221414141414141420190101";  // Para el archivo Ste_FD.xlsx
@@ -20,29 +17,50 @@ public class FD_Formato {
     //static String NombreFD = "test_Ste.atc.qa";
     //static String DatoPruebaValido = "66666666AAA8484848333333333333";
 
-    static File p = new File("C:\\Automatizacion\\ATC\\FD_Automatic\\BCHSTED01_STE_FD.xlsx");
-    static String NombreFD = "BCHSTED01_STE_TEST_ATC.xlsx.txt";
-    static String DatoPruebaValido = "D017763816k66655555abcdefghij0123456789aa7772626262626262626262019031288sssPPPPP88888888pppppppppppppppppp99999filler___";
+    static Texto t = new Texto();
+    static File p;             // Archivo FD
+    static String NombreFD;   // Nombre del archivo de salida
+    static String DatoPruebaValido; // Fila con valor correcto de Generacion
+    static String carpetaFD;        // Carpeta de salida del archivo
 
     // Definir en algun futuro estos valores en una base de datos
     static String [] abecedario = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M","N","Ñ","O","P","Q","R","S","T","U","V","W", "X","Y","Z"};
     static String [] numeros = {"0","1","2","3","4","5","6","7","8","9"};
     static String [] simbolos = {"|","°","!","\"","#","$","%","&","/","(",")","=","?","¡","'","[","]","\\","@","*","-"};
 
+    /*
     public static void main (String args []){
-        CrearInterfaz(p,NombreFD,DatoPruebaValido);
+        // Para ejecutar este main
+        //CrearInterfaz(p,NombreFD,DatoPruebaValido,2);
+
+        //String Archivo = "C:\\Automatizacion\\ATC\\FD_Automatic\\BCHSTED01_STE_FD.xlsx";
+        //String NombreFD = "BCHSTED01_STE_TEST_ATC.xlsx.txt";
+        //String DatoPruebaValido = "D017763816k66655555abcdefghij0123456789aa7772626262626262626262019031288sssPPPPP88888888pppppppppppppppppp99999filler___";
+        //String carpetaFD = "C:\\Automatizacion\\ATC\\FD_Automatic"; // carpeta de salida del archivo
+        //int numFilaDato = 2;
+
+        //CrearInterfaz(Archivo,NombreFD,carpetaFD,DatoPruebaValido,numFilaDato);
     }
+    */
 
-    public static void CrearInterfaz(File o, String NombreFD, String DatoPruebaValido){
+    public static void CrearInterfaz(String Archivo, String FD, String CarpetaSalida, String DPV, int NumDato) {
 
-        // Considerar que el indice es menos 1.. Osea la posicion real sería la 3
-        List<FD_Excel> Lista  = LeerExcelFD(o,2);
-        // Cantidad de coleccion de registros que se quieran generar
-        //for(int y=1; y<=5; y++) {
-        armarDato(Lista);
-        t.ArchivoFD("********************************************** FIN CAMPOS INTERFAZ **********************************************",carpetaFD,NombreFD); //System.out.println(DatoGenerado);
-        //t.ArchivoFD("********************************************** FIN DATO CICLO FOR " + y + " **********************************************",carpetaFD,NombreFD); //System.out.println(DatoGenerado);
-        //}
+        try {
+            p = new File(Archivo);
+            NombreFD = FD;
+            DatoPruebaValido = DPV;
+            carpetaFD = CarpetaSalida;
+
+            List<FD_Excel> Lista = LeerExcelFD(p, NumDato);
+            // Cantidad de coleccion de registros que se quieran generar
+            //for(int y=1; y<=5; y++) {
+            armarDato(Lista);
+            t.ArchivoFD("********************************************** FIN CAMPOS INTERFAZ **********************************************", carpetaFD, NombreFD); //System.out.println(DatoGenerado);
+            //t.ArchivoFD("********************************************** FIN DATO CICLO FOR " + y + " **********************************************",carpetaFD,NombreFD); //System.out.println(DatoGenerado);
+            //}
+        }catch(Exception e){
+            throw new FDInterfaceException("Error al crear interfaz", e);
+        }
     }
 
     public static List<FD_Excel> armarDato(List<FD_Excel> lista){
