@@ -37,7 +37,7 @@ public class Excel {
     }
 
 
-
+/*
     public static void main(String args[]){
         //Csv_Leer();
         // C:\Automatizacion\Documentos Prueba\PruebaExcel.xls
@@ -63,6 +63,7 @@ public class Excel {
         }
 
     }
+    */
 
     public static List<FD_Excel> LeerExcelFD(File archivo, int FilaDatos) {
 

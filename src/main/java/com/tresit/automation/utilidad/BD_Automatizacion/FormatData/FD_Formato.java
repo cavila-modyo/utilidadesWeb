@@ -23,23 +23,26 @@ public class FD_Formato {
     static String DatoPruebaValido; // Fila con valor correcto de Generacion
     static String carpetaFD;        // Carpeta de salida del archivo
 
+
     // Definir en algun futuro estos valores en una base de datos
     static String [] abecedario = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J","K", "L", "M","N","Ñ","O","P","Q","R","S","T","U","V","W", "X","Y","Z"};
     static String [] numeros = {"0","1","2","3","4","5","6","7","8","9"};
     static String [] simbolos = {"|","°","!","\"","#","$","%","&","/","(",")","=","?","¡","'","[","]","\\","@","*","-"};
+    static String [] enie = {"ñ","Ñ"};
+
 
     /*
     public static void main (String args []){
         // Para ejecutar este main
         //CrearInterfaz(p,NombreFD,DatoPruebaValido,2);
 
-        //String Archivo = "C:\\Automatizacion\\ATC\\FD_Automatic\\BCHSTED01_STE_FD.xlsx";
-        //String NombreFD = "BCHSTED01_STE_TEST_ATC.xlsx.txt";
-        //String DatoPruebaValido = "D017763816k66655555abcdefghij0123456789aa7772626262626262626262019031288sssPPPPP88888888pppppppppppppppppp99999filler___";
-        //String carpetaFD = "C:\\Automatizacion\\ATC\\FD_Automatic"; // carpeta de salida del archivo
-        //int numFilaDato = 2;
+        String Archivo = "C:\\Users\\3it\\Desktop\\Proyect STE\\-- Tickets\\2 Interfaz BSACC-59\\GeneraData\\FD.xlsx";
+        String NombreFD = "chl.sec.ddeufij.act.test";
+        String DatoPruebaValido = "D01776381616665555545999999999 llaveCTE_12345_qwerty0971101201812032018FB005241501012019010120185300000000096859                                                                 filler_98_espacios_para_completar";
+        String carpetaFD = "C:\\Users\\3it\\Desktop\\Proyect STE\\-- Tickets\\2 Interfaz BSACC-59\\GeneraData"; // carpeta de salida del archivo
+        int numFilaDato = 2;
 
-        //CrearInterfaz(Archivo,NombreFD,carpetaFD,DatoPruebaValido,numFilaDato);
+        CrearInterfaz(Archivo,NombreFD,carpetaFD,DatoPruebaValido,numFilaDato);
     }
     */
 
@@ -271,6 +274,10 @@ public class FD_Formato {
     // Ejemplo 111112221414141414141420190101 , quiero reemplazar el primer campo
     // STE_STETO = 11111  por STE_STETO = aaaaa      ReempalazarTexto("aaaaa", "11111");
     public static String ReempalazarTexto (String textoReemplazo, String texto_Encontrar){
+
+        // Hacer que reemplace el valor segun posicion en lugar de hacerlo por Replace
+        // Se encuentra defecto (si el valor a reemplazar es "1",
+        // Entonces donde se encuentre este numero en la linea de texto valida sera reemplazado)
 
         // Pasarle el valor definido arriba
         String resultado = DatoPruebaValido.replace(texto_Encontrar,textoReemplazo);

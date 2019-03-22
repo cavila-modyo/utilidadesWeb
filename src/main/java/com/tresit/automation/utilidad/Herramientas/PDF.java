@@ -14,12 +14,13 @@ import java.io.FileInputStream;
 
 public class PDF {
 
-    /*
+/*
     public static void main(String [] Args){
         String carpeta = "C:\\Automatizacion\\ATC\\Imagenes";
         String nombrePDF = "ArchivoPrueba";
         GeneratePDF_Images(carpeta, nombrePDF);
-    }*/
+    }
+    */
 
     public static void GeneratePDF_Images(String carpeta, String NombreArchivo) {
         try {
