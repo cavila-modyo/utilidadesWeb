@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tresit</groupId>
-    <artifactId>com.tresit.utilidad</artifactId>
+    <groupId>com.tresit.atc</groupId>
+    <artifactId>atc-utilidades</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!--Se agrega packgign para generar el jar desde la funcion package del maven project-->
