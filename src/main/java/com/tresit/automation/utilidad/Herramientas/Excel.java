@@ -9,6 +9,8 @@ import java.io.*;
 import java.math.BigDecimal;
 import java.util.*;
 
+import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.FD_Excel;
+
 public class Excel {
 
     /*CELL_TYPE_BLANK, CELL_TYPE_NUMERIC, CELL_TYPE_BLANK, CELL_TYPE_FORMULA, CELL_TYPE_BOOLEAN, CELL_TYPE_ERROR */
@@ -47,8 +49,77 @@ public class Excel {
 
         //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
         //LeerExcel(p);
+
+        File p = new File("C:\\Automatizacion\\ATC\\FD_Automatic\\Ste_FD.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
+        List<FD_Excel> Lista  = LeerExcelFD(p,2); // Considerar que el indice es menos 1.. Osea la posicion real sería la 3
+
+        for (int i = 0; i<=(Lista.size()-1);i++){
+            System.out.print(Lista.get(i).getNombreCampo());
+            System.out.print(" " + Lista.get(i).getDescripcionCampo());
+            System.out.print(" " + Lista.get(i).getTipoDato());
+            System.out.print(" " + Lista.get(i).getFormatoIflex());
+            System.out.print(" " + Lista.get(i).getLargo());
+            System.out.println("");
+        }
+
     }
     */
+
+    public static List<FD_Excel> LeerExcelFD(File archivo, int FilaDatos) {
+
+        List<FD_Excel> listaFD = new ArrayList<>();
+        FD_Excel FD;
+        String extension = obtenerExtension(archivo);
+        try {
+            InputStream targetStream = new FileInputStream(archivo);
+            if (extension.equals("xlsx")) {
+                try {
+                    System.out.println("Ruta del Archivo: " + archivo.getPath());
+                    XSSFWorkbook workbook = new XSSFWorkbook(archivo.getPath());
+                    StringBuffer sb = new StringBuffer("");
+                    // Read the Sheet
+                    for (int numSheet = 0; numSheet < workbook.getNumberOfSheets(); numSheet++) {
+                        XSSFSheet hssfSheet = workbook.getSheetAt(numSheet);
+                        if (hssfSheet == null) {
+                            continue;
+                        }
+                        // Read the Row
+                        for (int rowNum = 0; rowNum <= hssfSheet.getLastRowNum(); rowNum++) {
+                            XSSFRow hssfRow = hssfSheet.getRow(rowNum);
+                            //int celdas = getColumnsCountXLSX(hssfSheet); // cantidad de celdas de archivo
+                                if (hssfRow != null) {
+                                    if (rowNum >= FilaDatos) {
+                                        FD = new FD_Excel();
+
+                                        FD.setNombreCampo(hssfRow.getCell(0).toString());
+                                        FD.setFormatoIflex(hssfRow.getCell(1).toString());
+                                        FD.setTipoDato(hssfRow.getCell(2).toString());
+                                        FD.setDescripcionCampo(hssfRow.getCell(3).toString());
+                                        FD.setPosicionInicial(hssfRow.getCell(4).toString());
+                                        FD.setPosicionFinal(hssfRow.getCell(5).toString());
+                                        FD.setLargo(hssfRow.getCell(6).toString());
+                                        listaFD.add(FD);
+                                    }
+                                }
+
+                        }
+                    }
+                } catch (IOException e) {
+                    System.out.println("Error al leer_ xlsx: " + e.getMessage());
+                    e.printStackTrace();
+                }catch (NoClassDefFoundError notFound){
+                    System.out.println("Error al leer_ xlsx: " + notFound);
+                }
+            }
+
+        }catch(Exception e){
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        return listaFD;
+    }
+
+
 
     public static void LeerExcel(File archivo) {
         String extension = obtenerExtension(archivo);

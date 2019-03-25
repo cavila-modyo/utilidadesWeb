@@ -1,25 +1,25 @@
 
-Vsquid:S1118":Add a private constructor to hide the implicit public one.(Õãûÿÿÿÿÿ
-isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á£œÊ
 isquid:S00117#"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( üÓ¥
-^squid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(ÁÕ¬¸
-asquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(—ô„U
-csquid:S001126"FDefine and throw a dedicated exception instead of using a generic one.(¤ç›“þÿÿÿÿ
-gsquid:S1192"KDefine a constant instead of duplicating this literal "&password=" 3 times.(»…Ñýÿÿÿÿ
-bsquid:S1192"FDefine a constant instead of duplicating this literal "user=" 3 times.(»…Ñýÿÿÿÿ
 csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(­„­ªøÿÿÿÿ
+isquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á£œÊ
+csquid:S001126"FDefine and throw a dedicated exception instead of using a generic one.(¤ç›“þÿÿÿÿ
+nsquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á†º»þÿÿÿÿ
+gsquid:S1192"KDefine a constant instead of duplicating this literal "&password=" 3 times.(»…Ñýÿÿÿÿ
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Öžÿÿÿÿÿ
 nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÑµ­ýÿÿÿÿ
 nsquid:S00117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÑµ­ýÿÿÿÿ
-nsquid:S00117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Ö¼»úÿÿÿÿ
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Öžÿÿÿÿÿ
-ksquid:S001006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ç›“þÿÿÿÿ
-jsquid:S1192"NDefine a constant instead of duplicating this literal "jdbc:mysql://" 3 times.(¸†‡¾ýÿÿÿÿ
-fsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÕ¬¸
+Vsquid:S1118":Add a private constructor to hide the implicit public one.(Õãûÿÿÿÿÿ
 isquid:S001179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÉ–‡
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øó¬­
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­„­ªøÿÿÿÿ
-nsquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á†º»þÿÿÿÿ
-rsquid:S1192"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 3 times.(¹µÖÁüÿÿÿÿ
-nsquid:S00117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Öžÿÿÿÿÿ
 asquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(—ô„U
+nsquid:S00117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Ö¼»úÿÿÿÿ
+rsquid:S1192"VDefine a constant instead of duplicating this literal "com.mysql.jdbc.Driver" 3 times.(¹µÖÁüÿÿÿÿ
+fsquid:S00100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÕ¬¸
+asquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(—ô„U
+bsquid:S1192"FDefine a constant instead of duplicating this literal "user=" 3 times.(»…Ñýÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Øó¬­
+ksquid:S001006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ç›“þÿÿÿÿ
 asquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(—ô„U
+^squid:S00112!"FDefine and throw a dedicated exception instead of using a generic one.(ÁÕ¬¸
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­„­ªøÿÿÿÿ
+jsquid:S1192"NDefine a constant instead of duplicating this literal "jdbc:mysql://" 3 times.(¸†‡¾ýÿÿÿÿ
+nsquid:S00117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Öžÿÿÿÿÿ
