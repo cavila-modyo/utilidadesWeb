@@ -5,14 +5,14 @@ import java.io.IOException;
 
 public class Carpeta {
 
-    private String carpeta;
+    private String carp;
 
     public String getCarpeta() {
-        return carpeta;
+        return carp;
     }
 
     public void setCarpeta(String carpeta) {
-        this.carpeta = carpeta;
+        this.carp = carpeta;
     }
 
     // Utilizará las mismas variables con las que se crea la clase
