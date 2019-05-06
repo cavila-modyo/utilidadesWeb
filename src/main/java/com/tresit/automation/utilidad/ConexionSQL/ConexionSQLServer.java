@@ -115,38 +115,6 @@ public class ConexionSQLServer {
 
     }
 
-    //public static void EjemploProcAlmacenado (Connection con, String usuario, int atc_id, int testCycle_id, int status, Date fecha, Byte adjunto) {
-    public static void EjemploProcAlmacenado (Connection con, int idProyecto, int usuario, int idTestCase,
-                                              int testCycle_id, String status, int sprint, Byte adjunto) {
-        Statement stmt = null;
-        try {
-
-            // Llamada al procedimiento almacenado
-            CallableStatement cst = con.prepareCall("{call insertaEjecucion (?,?,?,?,?,?,?,?)}");
-            // Se definen los parámetros de entrada
-            cst.setInt(1, idProyecto);
-            cst.setInt(2, usuario);
-            cst.setInt(3, idTestCase);
-            cst.setInt(4, testCycle_id);
-            cst.setInt(5, sprint);
-            cst.setString(6, status);
-            cst.setByte(7, adjunto);
-            // Se definen parámetros de salida
-            cst.registerOutParameter("ValorDeSalida", Types.INTEGER);
-            // Ejecuta el procedimiento almacenado
-            cst.execute();
-            // Se obtienen la salida del procedimineto almacenado
-            int estado = cst.getInt("ValorDeSalida");
-            System.out.println("Estado Ejecución: " + estado);
-        } catch (SQLException ex) {
-            System.out.println(Error + ex.getMessage());
-        }finally{
-            try{
-                if(con!=null){con.close();}
-            }catch(SQLException se2){}
-        }
-    }
-
     public static void CerrarConexion(Connection conn){
         try{
             System.out.println("Cerramos la conexion...");

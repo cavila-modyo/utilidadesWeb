@@ -1,6 +1,6 @@
 package com.tresit.automation.utilidad.Herramientas;
 
-import com.tresit.automation.utilidad.ClasesUtilesUdla.*;
+import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.TCConfig;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
@@ -13,19 +13,6 @@ import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.FD_Excel;
 
 public class Excel {
 
-    /*CELL_TYPE_BLANK, CELL_TYPE_NUMERIC, CELL_TYPE_BLANK, CELL_TYPE_FORMULA, CELL_TYPE_BOOLEAN, CELL_TYPE_ERROR */
-
-    /*for (int c = 0; c < (cols = hssfRow.getLastCellNum()); c++) {
-    cellValue = hssfRow.getCell(c) == null?"":
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_STRING)?hssfRow.getCell(c).getStringCellValue():
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_NUMERIC)?"" + hssfRow.getCell(c).getNumericCellValue():
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_BOOLEAN)?"" + hssfRow.getCell(c).getBooleanCellValue():
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_BLANK)?"BLANK":
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_FORMULA)?"FORMULA":
-    (hssfRow.getCell(c).getCellType() == Cell.CELL_TYPE_ERROR)?"ERROR":"";
-    System.out.print("[Column " + c + ": " + cellValue + "] ");
-    }*/
-
     private static List<Object> DATA;
 
     static {
@@ -35,35 +22,6 @@ public class Excel {
                 new Object[] { "Gigabyte Brix - Barebón (Intel, Core i5, 2,6 GHz, 6, 35 cm (2.5\"), Serial ATA III, SO-DIMM) Negro ", new BigDecimal("421.36"), "https://www.amazon.es/Gigabyte-Brix-Bareb%C3%B3n-Serial-SO-DIMM/dp/B00HFCTUPM/" }
         });
     }
-
-
-/*
-    public static void main(String args[]){
-        //Csv_Leer();
-        // C:\Automatizacion\Documentos Prueba\PruebaExcel.xls
-        // C:\Automatizacion\Documentos Prueba\PruebaExcel.xlsx
-        //File f = new File("C:\\Users\\3it\\Downloads\\Resultado.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-
-        //File f = new File("C:\\Automatizacion\\ATC_TEST\\UDLA\\ATC_US_UDSGP_05000_Validar_Regla_General_SEDE_ID_4\\Descargas\\ReporteCupos.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //List<ReporteCupoInternado> lista = LeerExcelConClaseCupoInternado(f);
-
-        //File p = new File("C:\\Automatizacion\\Documentos Prueba\\PruebaExcel.xls");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        //LeerExcel(p);
-
-        File p = new File("C:\\Automatizacion\\ATC\\FD_Automatic\\Ste_FD.xlsx");  // Enfermeria - Internado - Cupo_NO_ASIG_EN - copia.xls
-        List<FD_Excel> Lista  = LeerExcelFD(p,2); // Considerar que el indice es menos 1.. Osea la posicion real sería la 3
-
-        for (int i = 0; i<=(Lista.size()-1);i++){
-            System.out.print(Lista.get(i).getNombreCampo());
-            System.out.print(" " + Lista.get(i).getDescripcionCampo());
-            System.out.print(" " + Lista.get(i).getTipoDato());
-            System.out.print(" " + Lista.get(i).getFormatoIflex());
-            System.out.print(" " + Lista.get(i).getLargo());
-            System.out.println("");
-        }
-
-    }
-    */
 
     public static List<FD_Excel> LeerExcelFD(File archivo, int FilaDatos) {
 
@@ -425,17 +383,6 @@ public class Excel {
         file.close();
     }
 
-
-    /*
-    public static void main (String args[]){
-        String rutaArchivos = "C:\\Automatizacion\\UDSGP-255\\Prueba";
-        String path = "C:\\Users\\3it\\Downloads";
-        List<File> listaExcel = ArchivosExcelDeCarpeta(path);
-        for (File child : listaExcel ){
-            cortarPegarArchivo(child,rutaArchivos);
-        }
-    }*/
-
     public static List<File> ArchivosExcelDeCarpeta(String path){
 
         // Definir la ruta donde quedan las descargas por usuario
@@ -476,5 +423,63 @@ public class Excel {
         }
         return path + "\\" + Excel.getName();
     }
+
+    public static List<TCConfig> LeerTCConfig(File archivo, int FilaDatos) {
+
+        List<TCConfig> listaFD = new ArrayList<>();
+        TCConfig FD;
+        String extension = obtenerExtension(archivo);
+        try {
+            InputStream targetStream = new FileInputStream(archivo);
+            if (extension.equals("xlsx")) {
+                try {
+                    System.out.println("Ruta del Archivo: " + archivo.getPath());
+                    XSSFWorkbook workbook = new XSSFWorkbook(archivo.getPath());
+                    StringBuffer sb = new StringBuffer("");
+                    // Read the Sheet
+                    for (int numSheet = 0; numSheet < workbook.getNumberOfSheets(); numSheet++) {
+                        XSSFSheet hssfSheet = workbook.getSheetAt(numSheet);
+                        String nombreHoja = workbook.getSheetName(numSheet);
+                        if (hssfSheet == null) {
+                            continue;
+                        }
+                        // Read the Row
+                        for (int rowNum = 0; rowNum <= hssfSheet.getLastRowNum(); rowNum++) {
+                            XSSFRow hssfRow = hssfSheet.getRow(rowNum);
+                            //int celdas = getColumnsCountXLSX(hssfSheet); // cantidad de celdas de archivo
+                            if (hssfRow != null) {
+                                if (rowNum >= FilaDatos) {
+                                    FD = new TCConfig();
+                                    FD.setNombreATC         (hssfRow.getCell(0).toString());
+                                    FD.setTipoATC           (hssfRow.getCell(1).toString());
+                                    FD.setResulEsperado     (hssfRow.getCell(2).toString());
+                                    FD.setNavegador         (hssfRow.getCell(3).toString());
+                                    FD.setVNC               (hssfRow.getCell(4).toString());
+                                    FD.setURL               (hssfRow.getCell(5).toString());
+                                    FD.setID_Usuario        (hssfRow.getCell(6).toString());
+                                    FD.setAmbienteEjecucion (hssfRow.getCell(7).toString());
+                                    FD.setIDHistoria        (nombreHoja);
+                                    FD.setUsuario           (hssfRow.getCell(8).toString());  //DATA VARIABLE
+                                    FD.setPassword          (hssfRow.getCell(9).toString()); //DATA VARIABLE
+                                    listaFD.add(FD);
+                                }
+                            }
+                        }
+                    }
+                } catch (IOException e) {
+                    System.out.println("Error al leer_ xlsx: " + e.getMessage());
+                    e.printStackTrace();
+                }catch (NoClassDefFoundError notFound){
+                    System.out.println("Error al leer_ xlsx: " + notFound);
+                }
+            }
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return listaFD;
+    }
+
 
 }

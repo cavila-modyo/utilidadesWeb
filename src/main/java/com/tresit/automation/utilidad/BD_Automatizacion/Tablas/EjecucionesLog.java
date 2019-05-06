@@ -14,6 +14,7 @@ public class EjecucionesLog {
     private Date Fecha;
     private Boolean Adjunto;
     private Integer idTipoAmbiente;
+    private String versionTipoAmbiente;
     private Integer idTipoEjecucion;
 
 
@@ -93,8 +94,11 @@ public class EjecucionesLog {
 
     public void setIdTipoAmbiente(Integer idTipoAmbiente) { this.idTipoAmbiente = idTipoAmbiente; }
 
+    public String getVersionTipoAmbiente() { return versionTipoAmbiente; }
+
+    public void setVersionTipoAmbiente(String versionTipoAmbiente) { this.versionTipoAmbiente = versionTipoAmbiente; }
+
     public Integer getIdTipoEjecucion() { return idTipoEjecucion; }
 
     public void setIdTipoEjecucion(Integer idTipoEjecucion) { this.idTipoEjecucion = idTipoEjecucion; }
-
 }

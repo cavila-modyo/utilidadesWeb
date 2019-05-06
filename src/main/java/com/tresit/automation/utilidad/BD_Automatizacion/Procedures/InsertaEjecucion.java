@@ -1,6 +1,7 @@
 package com.tresit.automation.utilidad.BD_Automatizacion.Procedures;
 
 import com.tresit.automation.utilidad.BD_Automatizacion.Tablas.EjecucionesLog;
+import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.TCConfig;
 import com.tresit.automation.utilidad.ConexionSQL.ConexionSQLServer;
 
 import java.sql.*;
@@ -11,7 +12,7 @@ public class InsertaEjecucion {
     static Connection conect = null;
     static ConexionSQLServer con = new ConexionSQLServer();
 
-    public void InsertaEjecucionTest (Connection con, EjecucionesLog obj) {
+    /*public void InsertaEjecucionTest (Connection con, EjecucionesLog obj) {
         Statement stmt = null;
         try {
 
@@ -42,7 +43,7 @@ public class InsertaEjecucion {
                 if(con!=null){con.close();}
             }catch(SQLException se2){}
         }
-    }
+    }*/
 
     public long InsertaEjecucionTest_RetornaID (Connection con, EjecucionesLog obj) {
         Statement stmt = null;
@@ -102,31 +103,73 @@ public class InsertaEjecucion {
         return estado;
     }
 
+    public long InsertaEjecucionATC (Connection con, TCConfig obj, int Status, int idError, boolean Adjunto, String Navegador, String Version) {
+        Statement stmt = null;
+        long estado = 0;
+        try {
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = con.prepareCall("{call insertaEjecucionATC (?,?,?,?,?,?,?,?,?,?)}");
+            // Se definen los parámetros de entrada
+            int ID_Usuario = (int)Double.parseDouble(obj.getID_Usuario());
 
-    // Metodo que haga select al ID_Ejecucion que se actualizará....
-/*
-    public static void main(String[] args) {
+            cst.setInt(1, ID_Usuario);
+            cst.setString(2, obj.getIDHistoria());
+            cst.setInt(3, Status);
+            cst.setInt(4, idError);
+            cst.setBoolean(6, Adjunto);
+            cst.setString(7, Navegador);
+            cst.setString(8, Version);
+            cst.setString(10, obj.getAmbienteEjecucion());
+            cst.setString(11, obj.getURL());
+/*            System.out.println("ID_PROYECTO: " + ID_Proyecto);
+            System.out.println("ID_Usuario: " + ID_Usuario);
+            System.out.println("CP: " + CP);
+            System.out.println("Sprint: " + Sprint);
+            System.out.println("Status: " + Status);
+            System.out.println("IdTipoAmbiente: " + idTipoEjecucionAmbiente);
+            System.out.println("IdTipoEjecucion: " + idTipoEjecucion);
+            System.out.println("VersionTipoAmbiente: " + obj.getVersionTipoAmbiente());
+            System.out.println("getAmbienteEjecucion: " + obj.getAmbienteEjecucion());
+            System.out.println("getURL" + obj.getURL());*/
+            cst.registerOutParameter("ValorDeSalida", Types.INTEGER); // Se definen parámetros de salida
+            cst.execute(); // Ejecuta el procedimiento almacenado
+            estado = cst.getInt("ValorDeSalida");// Se obtienen la salida del procedimineto almacenado
 
-        EjecucionesLog obj = new EjecucionesLog();
-        conect = con.abrirConexionAutomatizacion();
-
-        obj.setID_Ejecucion(10008);
-        obj.setID_Proyecto(2);
-        obj.setID_Usuario(2);
-        //obj.setID_TestCase(2);
-        obj.setID_TestCase(1142);
-        obj.setID_TestCycle(150);
-        obj.setStatus("pass from aplication");
-        obj.setSprint(1);
-        obj.setAdjunto(false);
-
-        //InsertaEjecucionTest(conect, obj);
-        //long algo = InsertaEjecucionTest_RetornaID(conect, obj);
-        //int algo = ActualizaEjecucionTest(conect, 10008, "pass desde aplicacion" );
-        //System.out.println("Retorno de Ejecucion: " + algo);
-
-        //con.CerrarConexion(conect);
+        } catch (SQLException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }finally{
+            try{
+                if(con!=null){con.close();}
+            }catch(SQLException se2){}
+        }
+        return estado;
     }
-*/
 
+
+    public int ActualizaEjecucionTestATC (Connection con, long id_Ejecucion, int Status, int id_Error) {
+        Statement stmt = null;
+        int estado = 1;
+        try {
+            // Llamada al procedimiento almacenado
+            CallableStatement cst = con.prepareCall("{call [UpdateStatusEjecucionATC] (?,?,?)}");
+            // Se definen los parámetros de entrada
+            cst.setLong(1, id_Ejecucion);
+            cst.setInt(2, Status);
+            cst.setInt(3, id_Error);
+            // Se definen parámetros de salida
+            cst.registerOutParameter("ValorDeSalida", Types.INTEGER);
+            // Ejecuta el procedimiento almacenado
+            cst.execute();
+            // Se obtienen la salida del procedimineto almacenado
+            estado = cst.getInt("ValorDeSalida");
+            //System.out.println("Estado Ejecución: " + estado);
+        } catch (SQLException ex) {
+            System.out.println("Error: " + ex.getMessage());
+        }finally{
+            try{
+                if(con!=null){con.close();}
+            }catch(SQLException se2){}
+        }
+        return estado;
+    }
 }
