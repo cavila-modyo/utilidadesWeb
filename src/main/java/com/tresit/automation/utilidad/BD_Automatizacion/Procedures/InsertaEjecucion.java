@@ -3,6 +3,7 @@ package com.tresit.automation.utilidad.BD_Automatizacion.Procedures;
 import com.tresit.automation.utilidad.BD_Automatizacion.Tablas.EjecucionesLog;
 import com.tresit.automation.utilidad.BD_Automatizacion.FormatData.TCConfig;
 import com.tresit.automation.utilidad.ConexionSQL.ConexionSQLServer;
+import com.tresit.automation.utilidad.Herramientas.Log;
 
 import java.sql.*;
 
@@ -108,35 +109,34 @@ public class InsertaEjecucion {
         long estado = 0;
         try {
             // Llamada al procedimiento almacenado
-            CallableStatement cst = con.prepareCall("{call insertaEjecucionATC (?,?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cst = con.prepareCall("{call insertaEjecucionATC (?,?,?,?,?,?,?,?,?,?,?)}");
             // Se definen los parámetros de entrada
             int ID_Usuario = (int)Double.parseDouble(obj.getID_Usuario());
+            String AmbienteEjec = obj.getAmbienteEjecucion().toUpperCase();
 
             cst.setInt(1, ID_Usuario);
-            cst.setString(2, obj.getIDHistoria());
-            cst.setInt(3, Status);
-            cst.setInt(4, idError);
+            cst.setString(2, obj.getNombreATC());
+            cst.setString(3, obj.getIDHistoria());
+            cst.setInt(4, Status);
+            cst.setInt(5, idError);
             cst.setBoolean(6, Adjunto);
             cst.setString(7, Navegador);
             cst.setString(8, Version);
-            cst.setString(10, obj.getAmbienteEjecucion());
-            cst.setString(11, obj.getURL());
-/*            System.out.println("ID_PROYECTO: " + ID_Proyecto);
-            System.out.println("ID_Usuario: " + ID_Usuario);
-            System.out.println("CP: " + CP);
-            System.out.println("Sprint: " + Sprint);
-            System.out.println("Status: " + Status);
-            System.out.println("IdTipoAmbiente: " + idTipoEjecucionAmbiente);
-            System.out.println("IdTipoEjecucion: " + idTipoEjecucion);
-            System.out.println("VersionTipoAmbiente: " + obj.getVersionTipoAmbiente());
-            System.out.println("getAmbienteEjecucion: " + obj.getAmbienteEjecucion());
-            System.out.println("getURL" + obj.getURL());*/
+            cst.setString(9, AmbienteEjec);
+            cst.setString(10, obj.getURL());
+
+            Log agregarLog = new Log();
+
+            //String x = "ID_Usuario: " + ID_Usuario + "\nNombreATC: " +  obj.getNombreATC() + "\nhistoria: " +  obj.getIDHistoria() + "\nStatus: " + Status + "\nidError: " + idError + "\nAdjunto: " + Adjunto;
+            //x = x + "\nNavegador: " + Navegador + "\nVersion: " + Version + "\nAmbiente: " + obj.getAmbienteEjecucion() + "\nURL: " + obj.getURL();
+            //System.out.println("X: " + x);
+            //agregarLog.AgregarLoguerDia(x, "C:\\Automatizacion");
             cst.registerOutParameter("ValorDeSalida", Types.INTEGER); // Se definen parámetros de salida
             cst.execute(); // Ejecuta el procedimiento almacenado
             estado = cst.getInt("ValorDeSalida");// Se obtienen la salida del procedimineto almacenado
 
         } catch (SQLException ex) {
-            System.out.println("Error: " + ex.getMessage());
+            ex.printStackTrace();
         }finally{
             try{
                 if(con!=null){con.close();}
@@ -151,7 +151,7 @@ public class InsertaEjecucion {
         int estado = 1;
         try {
             // Llamada al procedimiento almacenado
-            CallableStatement cst = con.prepareCall("{call [UpdateStatusEjecucionATC] (?,?,?)}");
+            CallableStatement cst = con.prepareCall("{call [UpdateStatusEjecucionATC] (?,?,?,?)}");
             // Se definen los parámetros de entrada
             cst.setLong(1, id_Ejecucion);
             cst.setInt(2, Status);

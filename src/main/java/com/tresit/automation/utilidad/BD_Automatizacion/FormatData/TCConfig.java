@@ -5,10 +5,10 @@ import java.util.Date;
 public class TCConfig {
     //private String CP;              // [0]
     private String NombreATC;       // [1]
-    private String TipoATC;         // [2]
+   //private String TipoATC;         // [2]
     //private String Funcionalidad;   // [3]
     //private String Descripcion;     // [4]
-    private String ResulEsperado;   // [5]
+    //private String ResulEsperado;   // [5]
     private String Navegador;       // [6]
     private String VNC;             // [7]
     private String URL;             // [8]
@@ -27,10 +27,10 @@ public class TCConfig {
 
     //public String getCP()               {return CP;}
     public String getNombreATC()        {return NombreATC;}
-    public String getTipoATC()          {return TipoATC;}
+    //public String getTipoATC()          {return TipoATC;}
     //public String getFuncionalidad()    {return Funcionalidad;}
     //public String getDescripcion()      {return Descripcion;}
-    public String getResulEsperado()    {return ResulEsperado;}
+    //public String getResulEsperado()    {return ResulEsperado;}
     public String getNavegador()        {return Navegador;}
     public String getVNC()              {return VNC;}
     public String getURL()              {return URL;}
@@ -53,10 +53,10 @@ public class TCConfig {
 
     //public void setCP(String CP)                        {this.CP = CP;}
     public void setNombreATC(String nombreATC)          {this.NombreATC = nombreATC;}
-    public void setTipoATC(String tipoATC)              {this.TipoATC = tipoATC;}
+    //public void setTipoATC(String tipoATC)              {this.TipoATC = tipoATC;}
     //public void setFuncionalidad(String funcionalidad)  {this.Funcionalidad = funcionalidad;}
     //public void setDescripcion(String descripcion)      {this.Descripcion = descripcion;}
-    public void setResulEsperado(String resulEsperado)  {this.ResulEsperado = resulEsperado;}
+    //public void setResulEsperado(String resulEsperado)  {this.ResulEsperado = resulEsperado;}
     public void setNavegador(String navegador)          {this.Navegador = navegador;}
     public void setVNC(String VNC)                      {this.VNC = VNC;}
     public void setURL(String URL)                      {this.URL = URL;}

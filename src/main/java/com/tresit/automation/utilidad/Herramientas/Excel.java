@@ -451,16 +451,14 @@ public class Excel {
                                 if (rowNum >= FilaDatos) {
                                     FD = new TCConfig();
                                     FD.setNombreATC         (hssfRow.getCell(0).toString());
-                                    FD.setTipoATC           (hssfRow.getCell(1).toString());
-                                    FD.setResulEsperado     (hssfRow.getCell(2).toString());
-                                    FD.setNavegador         (hssfRow.getCell(3).toString());
-                                    FD.setVNC               (hssfRow.getCell(4).toString());
-                                    FD.setURL               (hssfRow.getCell(5).toString());
-                                    FD.setID_Usuario        (hssfRow.getCell(6).toString());
-                                    FD.setAmbienteEjecucion (hssfRow.getCell(7).toString());
+                                    FD.setNavegador         (hssfRow.getCell(1).toString());
+                                    FD.setVNC               (hssfRow.getCell(2).toString());
+                                    FD.setURL               (hssfRow.getCell(3).toString());
+                                    FD.setID_Usuario        (hssfRow.getCell(4).toString());
+                                    FD.setAmbienteEjecucion (hssfRow.getCell(5).toString());
                                     FD.setIDHistoria        (nombreHoja);
-                                    FD.setUsuario           (hssfRow.getCell(8).toString());  //DATA VARIABLE
-                                    FD.setPassword          (hssfRow.getCell(9).toString()); //DATA VARIABLE
+                                    FD.setUsuario           (hssfRow.getCell(6).toString());  //DATA VARIABLE
+                                    FD.setPassword          (hssfRow.getCell(7).toString()); //DATA VARIABLE
                                     listaFD.add(FD);
                                 }
                             }
