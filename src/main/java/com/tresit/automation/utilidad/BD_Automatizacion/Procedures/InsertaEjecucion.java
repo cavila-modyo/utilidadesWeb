@@ -104,12 +104,15 @@ public class InsertaEjecucion {
         return estado;
     }
 
-    public long InsertaEjecucionATC (Connection con, TCConfig obj, int Status, int idError, boolean Adjunto, String Navegador, String Version) {
+    public long InsertaEjecucionATC (Connection con, TCConfig obj, int Status, int idError, boolean Adjunto, String Navegador, String Version, String id_Sesion) {
         Statement stmt = null;
         long estado = 0;
         try {
+            if (id_Sesion!=null){
+                id_Sesion = id_Sesion + ".log";
+            }
             // Llamada al procedimiento almacenado
-            CallableStatement cst = con.prepareCall("{call insertaEjecucionATC (?,?,?,?,?,?,?,?,?,?,?)}");
+            CallableStatement cst = con.prepareCall("{call insertaEjecucionATC (?,?,?,?,?,?,?,?,?,?,?,?)}");
             // Se definen los parámetros de entrada
             int ID_Usuario = (int)Double.parseDouble(obj.getID_Usuario());
             String AmbienteEjec = obj.getAmbienteEjecucion().toUpperCase();
@@ -124,6 +127,7 @@ public class InsertaEjecucion {
             cst.setString(8, Version);
             cst.setString(9, AmbienteEjec);
             cst.setString(10, obj.getURL());
+            cst.setString(11, id_Sesion);
 
             Log agregarLog = new Log();
 
