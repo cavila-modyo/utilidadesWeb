@@ -31,7 +31,10 @@ public enum Browser {
     OPERA {
         @Override
         public MutableCapabilities getDefaultCapabilities() {
-            return new OperaOptions();
+            OperaOptions operaOptions = new OperaOptions();
+            operaOptions.setCapability("browserName", "operablink");
+            operaOptions.setBinary("/usr/bin/opera");
+            return operaOptions;
         }
     },
     SAFARI {

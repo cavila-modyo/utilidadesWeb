@@ -13,16 +13,16 @@
 
     <distributionManagement>
         <repository>
-            <id>nexus-3it</id>
+            <id>nexus-modyo</id>
             <name>Internal Releases</name>
             <!--url>http://172.16.15.66:8081/repository/maven-releases/</url-->
-            <url>http://nexus.3it.corp/repository/maven-releases/</url>
+            <url>http://localhost:8082/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-3it</id>
+            <id>nexus-modyo</id>
             <name>Internal Snapshot</name>
             <!--url>http://172.16.15.66:8081/repository/maven-snapshots/</url-->
-            <url>http://nexus.3it.corp/repository/maven-snapshots/</url>
+            <url>http://localhost:8082/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
