@@ -13,5 +13,10 @@ pipeline {
         sh 'mvn clean deploy -f pom.xml'
       }
     }
+    stage('Borrar Workspace') {
+      steps {
+        cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenSuccess: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true)
+      }
+    }
   }
 }
