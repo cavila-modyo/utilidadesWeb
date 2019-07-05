@@ -13,7 +13,7 @@ pipeline {
           }
           steps {
             sh '''mvn -v
-mvn clean deploy -f pom.xml'''
+mvn --settings /usr/share/conf_m2/settings.xml clean deploy -f pom.xml'''
           }
         }
         stage('errores') {
