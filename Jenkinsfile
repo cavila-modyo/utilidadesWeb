@@ -12,7 +12,8 @@ pipeline {
 
           }
           steps {
-            sh 'mvn clean deploy -f pom.xml'
+            sh '''mvn -v
+mvn clean deploy -f pom.xml'''
           }
         }
         stage('errores') {
