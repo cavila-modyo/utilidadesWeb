@@ -14,7 +14,8 @@ pipeline {
           steps {
             sh '''mvn -v
 pwd
-whoami'''
+whoami
+cd /usr/share/conf_m2/'''
             sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
 ls /root/.m2
 mvn -v
