@@ -4,12 +4,8 @@ pipeline {
     stage('Upload Nexus') {
       parallel {
         stage('Upload Nexus') {
-          agent {
-            docker {
-              image 'maven:3-alpine'
-              args '-v /root/.m2:/root/.m2'
-            }
-
+          environment {
+            maven = 'maven'
           }
           steps {
             sh '''mvn -v
@@ -34,5 +30,8 @@ mvn --settings /usr/share/conf_m2/settings.xml clean deploy -f pom.xml'''
         cleanWs(cleanWhenAborted: true, cleanWhenFailure: true, cleanWhenSuccess: true, cleanWhenNotBuilt: true, cleanWhenUnstable: true)
       }
     }
+  }
+  environment {
+    maven = 'maven'
   }
 }
