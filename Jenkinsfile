@@ -13,6 +13,7 @@ pipeline {
           }
           steps {
             sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
+ls /root/.m2
 mvn -v
 mvn --settings /usr/share/conf_m2/settings.xml clean deploy -f pom.xml'''
           }
