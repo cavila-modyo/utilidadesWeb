@@ -16,6 +16,9 @@ pipeline {
 ls /root/.m2
 mvn -v
 mvn --settings /usr/share/conf_m2/settings.xml clean deploy -f pom.xml'''
+            sh '''mvn -v
+pwd
+whoami'''
           }
         }
         stage('errores') {
