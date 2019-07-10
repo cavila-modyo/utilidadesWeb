@@ -19,6 +19,8 @@ ls /root/.m2
 uname -a'''
             sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
 ls /root/.m2
+cat /root/.m2/copy_reference_file.log
+
 mvn -v
 uname -a
 mvn --settings /root/.m2/settings.xml clean deploy -f pom.xml'''
