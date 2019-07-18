@@ -18,11 +18,11 @@ whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
 '''
-            sh '''ls /root/.m2
-
+            sh '''
 mvn -v
 
-/var/jenkins_home/workspace/uploadNexus3_
+cd /var/jenkins_home/workspace/uploadNexus3_2
+ls
 
 ls /usr/share/maven/ref/
 cp /usr/share/maven/ref/settings.xml /root/.m2/settings.xml
