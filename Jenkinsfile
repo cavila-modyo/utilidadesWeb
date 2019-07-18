@@ -2,17 +2,15 @@ pipeline {
   agent any
   stages {
     stage('Upload Nexus') {
-      parallel {
-        stage('Upload Nexus') {
-          agent {
-            docker {
-              image 'maven:3-alpine'
-              args '-v $HOME/.m2:/root/.m2:z -u root'
-            }
+      agent {
+        docker {
+          image 'maven:3-alpine'
+          args '-v $HOME/.m2:/root/.m2:z -u root'
+        }
 
-          }
-          steps {
-            sh '''mvn -v
+      }
+      steps {
+        sh '''mvn -v
 pwd
 ls -lta
 cp settings.xml /usr/share/maven/ref/
@@ -20,17 +18,10 @@ whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
 '''
-            sh '''mvn -v
+        sh '''mvn -v
 
 ls /usr/share/maven/ref/
 mvn --settings /usr/share/maven/ref/settings.xml clean deploy -f pom.xml'''
-          }
-        }
-        stage('errores') {
-          steps {
-            catchError()
-          }
-        }
       }
     }
     stage('Borrar Workspace') {
