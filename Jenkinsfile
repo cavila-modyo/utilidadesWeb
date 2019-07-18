@@ -20,15 +20,10 @@ whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
 '''
-            sh '''
-mvn -v
-
-cd /var/jenkins_home/workspace/uploadNexus3_develop
-ls
+            sh '''mvn -v
 
 ls /usr/share/maven/ref/
-cp /usr/share/maven/ref/settings.xml /root/.m2/settings.xml
-mvn --settings /root/.m2/settings.xml clean deploy -f pom.xml'''
+mvn --settings /usr/share/maven/ref/settings.xml clean deploy -f pom.xml'''
           }
         }
         stage('errores') {
