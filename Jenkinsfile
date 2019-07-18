@@ -18,14 +18,13 @@ whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
 '''
-            sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
-ls /root/.m2
-cat /root/.m2/copy_reference_file.log
-cat /root/.m2/settings-docker.xml
+            sh '''ls /root/.m2
 
 mvn -v
-uname -a
-cp /usr/share/conf_m2/settings.xml /usr/share/maven/ref/settings.xml
+
+/var/jenkins_home/workspace/uploadNexus3_
+
+ls /usr/share/maven/ref/
 cp /usr/share/maven/ref/settings.xml /root/.m2/settings.xml
 mvn --settings /root/.m2/settings.xml clean deploy -f pom.xml'''
           }
