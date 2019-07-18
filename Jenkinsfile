@@ -15,7 +15,6 @@ pipeline {
             sh '''mvn -v
 pwd
 whoami
-ls /usr/share/conf_m2
 ls /root/.m2
 ls /usr/share/maven/ref/
 '''
