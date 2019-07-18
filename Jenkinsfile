@@ -10,13 +10,7 @@ pipeline {
 
       }
       steps {
-        sh '''mvn -v
-pwd
-ls -lta
-cp settings.xml /usr/share/maven/ref/
-whoami
-ls /root/.m2
-ls /usr/share/maven/ref/
+        sh '''ls /usr/share/maven/ref/
 '''
         sh '''mvn -v
 
