@@ -10,11 +10,7 @@ pipeline {
 
       }
       steps {
-        sh '''ls /usr/share/maven/ref/
-'''
-        sh '''mvn -v
-
-ls /usr/share/maven/ref/
+        sh '''cp settings.xml /usr/share/maven/ref/
 mvn --settings /usr/share/maven/ref/settings.xml clean deploy -f pom.xml'''
       }
     }
