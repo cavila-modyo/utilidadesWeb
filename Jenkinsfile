@@ -14,6 +14,7 @@ pipeline {
           steps {
             sh '''mvn -v
 pwd
+ls -lta
 whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
@@ -21,7 +22,7 @@ ls /usr/share/maven/ref/
             sh '''
 mvn -v
 
-cd /var/jenkins_home/workspace/uploadNexus3_2
+cd /var/jenkins_home/workspace/uploadNexus3_develop
 ls
 
 ls /usr/share/maven/ref/
