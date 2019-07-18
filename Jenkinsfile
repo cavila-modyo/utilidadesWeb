@@ -15,15 +15,18 @@ pipeline {
             sh '''mvn -v
 pwd
 whoami
+ls /usr/share/conf_m2
 ls /root/.m2
-uname -a'''
+ls /usr/share/maven/ref/
+'''
             sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
 ls /root/.m2
 cat /root/.m2/copy_reference_file.log
 
 mvn -v
 uname -a
-cp /usr/share/conf_m2/settings.xml /usr/share/maven/ref/
+cp /usr/share/conf_m2/settings.xml /usr/share/maven/ref/settings.xml
+cp /usr/share/maven/ref/settings.xml /root/.m2/settings.xml
 mvn --settings /root/.m2/settings.xml clean deploy -f pom.xml'''
           }
         }
