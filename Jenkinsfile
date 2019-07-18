@@ -7,7 +7,7 @@ pipeline {
           agent {
             docker {
               image 'maven:3-alpine'
-              args '-v /usr/share/conf_m2:/root/.m2:ro --network atc'
+              args '-v /usr/share/conf_m2:/root/.m2:ro'
             }
 
           }
