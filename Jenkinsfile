@@ -21,6 +21,7 @@ ls /usr/share/maven/ref/
             sh '''ifconfig | grep "inet " | grep -v 127.0.0.1
 ls /root/.m2
 cat /root/.m2/copy_reference_file.log
+cat /root/.m2/settings-docker.xml
 
 mvn -v
 uname -a
