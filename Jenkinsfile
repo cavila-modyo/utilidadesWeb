@@ -23,7 +23,7 @@ cat /root/.m2/copy_reference_file.log
 
 mvn -v
 uname -a
-COPY /usr/share/conf_m2/settings.xml /usr/share/maven/ref/
+cp /usr/share/conf_m2/settings.xml /usr/share/maven/ref/
 mvn --settings /root/.m2/settings.xml clean deploy -f pom.xml'''
           }
         }
