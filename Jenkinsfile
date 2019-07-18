@@ -15,6 +15,8 @@ pipeline {
             sh '''mvn -v
 pwd
 ls -lta
+cp settings.xml /root/.m2
+cp settings.xml /usr/share/maven/ref/
 whoami
 ls /root/.m2
 ls /usr/share/maven/ref/
