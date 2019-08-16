@@ -6,20 +6,20 @@
 
     <groupId>com.modyo.atc</groupId>
     <artifactId>utilidades</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0-RELEASE</version>
 
     <packaging>jar</packaging>
 
     <distributionManagement>
         <repository>
-            <id>nexus-modyo</id>
+            <id>nexus-emlf</id>
             <name>Internal Releases</name>
-            <url>http://192.168.0.10:8082/repository/maven-releases/</url>
+            <url>http://190.160.136.181:8082/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-modyo</id>
+            <id>nexus-emlf</id>
             <name>Internal Snapshot</name>
-            <url>http://192.168.0.10:8082/repository/maven-snapshots/</url>
+            <url>http://190.160.136.181:8082/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
