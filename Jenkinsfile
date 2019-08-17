@@ -1,23 +1,10 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3-alpine'
-      args '-v $HOME/.m2:/root/.m2:z -u root'
-    }
-
-  }
+  agent none
   stages {
     stage('Upload Nexus') {
-      agent {
-        docker {
-          image 'maven:3-alpine'
-          args '-v $HOME/.m2:/root/.m2:z -u root'
-        }
-
-      }
       steps {
-        sh '''cp settings.xml /usr/share/maven/ref/
-mvn --settings /usr/share/maven/ref/settings.xml clean deploy -f pom.xml'''
+        tool 'maven'
+        sh 'mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'
       }
     }
     stage('Borrar Workspace') {
