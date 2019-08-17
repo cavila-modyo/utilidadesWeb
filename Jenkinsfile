@@ -5,7 +5,9 @@ pipeline {
       agent any
       steps {
         echo 'Inicia Build'
-        sh 'mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'
+        sh '''cat pom.xml
+cat /var/jenkins_home/plugins/settings.xml
+mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'''
         echo 'Fin Build'
       }
     }
