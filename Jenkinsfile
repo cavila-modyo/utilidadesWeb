@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Upload Nexus') {
       steps {
-        tool 'maven'
         sh 'mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'
       }
     }
