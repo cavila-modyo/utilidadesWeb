@@ -5,10 +5,9 @@ pipeline {
       agent any
       steps {
         echo 'Inicia Build'
-        sh '''cat pom.xml
-cat /var/jenkins_home/plugins/settings.xml
-mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'''
+        sh 'mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'
         echo 'Fin Build'
+        slackSend(token: '8xVDBA48XlCFjCrG9lCyLmbj', teamDomain: 'enmilocalfuncionaco', channel: 'test', color: 'yellow')
       }
     }
     stage('Borrar Workspace') {
