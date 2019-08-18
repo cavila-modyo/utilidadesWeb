@@ -21,7 +21,7 @@ pipeline {
 -Dsonar.projectVersion=1.0 \\
 -Dsonar.projectKey=utilidades-snapshot \\
 -Dsonar.sources=src \\
--Dsonar.java.binaries=target/classes \\'''
+-Dsonar.java.binaries=target/classes/* \\'''
           }
         }
       }
