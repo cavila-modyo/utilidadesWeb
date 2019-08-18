@@ -7,7 +7,7 @@ pipeline {
         echo 'Inicia Build'
         sh 'mvn --settings /var/jenkins_home/plugins/settings.xml clean deploy -f pom.xml'
         echo 'Fin Build'
-        slackSend(token: '8xVDBA48XlCFjCrG9lCyLmbj', teamDomain: 'enmilocalfuncionaco', channel: 'test', color: 'yellow', attachments: 'Se inicia Deploy Utilidades', baseUrl: 'https://enmilocalfuncionaco.slack.com', message: 'test', username: 'jenkins', botUser: true, tokenCredentialId: 'slack')
+        slackSend(token: '8xVDBA48XlCFjCrG9lCyLmbj', teamDomain: 'enmilocalfuncionaco', channel: 'test', color: 'YELLOW', attachments: 'Se inicia Deploy Utilidades', baseUrl: 'https://enmilocalfuncionaco.slack.com', message: 'test', username: 'jenkins', botUser: true, tokenCredentialId: 'jenkins')
       }
     }
     stage('Borrar Workspace') {
