@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Analisis SonarQube') {
           steps {
-            sh '''mvn sonar:sonar
+            sh '''mvn sonar:sonar \\
 -Dsonar.host.url=http://190.160.136.181:9011
 -Dsonar.login=admin \\
 -Dsonar.password=admin \\
@@ -22,8 +22,7 @@ pipeline {
 -Dsonar.projectKey=utilidades-snapshot \\
 -Dsonar.sources=src \\
 -Dsonar.java.libraries=target \\
--Dsonar.java.binaries=target/classes \\
-'''
+-Dsonar.java.binaries=target/classes '''
           }
         }
       }
