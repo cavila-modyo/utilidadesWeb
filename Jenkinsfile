@@ -17,6 +17,7 @@ pipeline {
   -Dsonar.projectKey=utilidades-snapshot \\
   -Dsonar.host.url=http://190.160.136.181:9011 \\
   -Dsonar.sources=src \\
+  -Dsonar.java.binaries=target/classes \\
   -Dsonar.login=ed08305680dc45b067e9b2af2d7cc650471fe415'''
           }
         }
